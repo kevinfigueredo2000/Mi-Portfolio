@@ -1,0 +1,23 @@
+.index #srch{
+    border-radius: 20px;
+    border-color: white;
+    background-color: transparent;
+    margin-left: 13%;
+    margin-top: 55%;
+}
+.index .form-control{
+    width: 75%;
+}
+.index #mmt{
+    border-radius: 20px;
+    border-color:transparent;
+    background-color: white;
+    color: #370A6D;
+    padding: 6px 42px 6px 42px;
+}
+.index #mmt:hover{
+    border-color:transparent;
+    background-color: #370A6D;
+    color: white;
+    text-decoration: none;
+}

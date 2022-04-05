@@ -1,0 +1,28 @@
+.contacto main{
+    margin-top: 4%;
+}
+.contacto p{
+    color: #6A6A6A;
+}
+.contacto #nombre{ 
+    margin-bottom: -15px;
+    border-radius: 20px;
+    border-color:transparent;
+}
+.contacto #email{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color:transparent;
+}
+.contacto #comentarios{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color:transparent;
+}
+.contacto #enviar{
+    border-radius: 20px;
+    border-color:transparent;
+    background-color: #370A6D;
+    color: white;
+    padding: 6px 42px 6px 42px;
+}
