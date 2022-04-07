@@ -4,7 +4,7 @@ import "./SobreMi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
-import Records from "../Records.json";
+import StackTec from "../StackTec.json";
 
 export const SobreMi = () =>{
     return(
@@ -33,18 +33,17 @@ export const SobreMi = () =>{
                 </Row>
                 <Row className="mb-3 inner">
                     {
-                        Records && Records.map( record =>{
+                        StackTec && StackTec.map( stack =>{
                             return(
-                                <div className="col-4 col-sm-2 mb-3">
+                                <div className="col-6 col-sm-2 mb-3">
                                     <div className="card shadow">
-                                        <img src={record.icon} className="imgflud cards" alt={record.caption}/> <br/>
-                                        <h3 className="text-center tec">{record.caption}</h3>
+                                        <img src={stack.icon} className="imgflud cards" alt={stack.caption}/> <br/>
+                                        <h3 className="text-center tec">{stack.caption}</h3>
                                     </div>
                                 </div>
                             )
                         })
                     }
-                   
                 </Row>        
             </Container>
             <hr/>
@@ -133,10 +132,7 @@ export const SobreMi = () =>{
                                                 <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
                                             </ul>
                                         </div>
-                                        
                                     </div>
-                                </Row>
-                                <Row>
                                     <div>
                                         <a className="vremprojo" target="_blank" href="https://www.coderhouse.com/" rel="noreferrer">VER EMPRESA</a>
                                     </div>
