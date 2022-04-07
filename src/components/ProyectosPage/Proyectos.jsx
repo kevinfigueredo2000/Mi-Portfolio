@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Proyectos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,7 +36,7 @@ export const Proyectos = () =>{
                                         <input type="button" id="btn_ver" value="VER ONLINE"/>
                                     </div>
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/kevinfigueredo2000/ABM-Clientes" target="_blank" id="cf">Código fuente</a>
+                                        <a href="https://github.com/kevinfigueredo2000/ABM-Clientes" target="_blank" id="cf" rel="noreferrer">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
