@@ -13,7 +13,7 @@ export const Inicio = () =>{
                 <Container>
                     <Row>
                         <div className="text-center">
-                            <Link to="sobre-mi"><img className="avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo"/></Link>
+                            <Link to="sobre-mi"><img className="avatarindx shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo"/></Link>
                         </div>
                     </Row>
                     <Row>
