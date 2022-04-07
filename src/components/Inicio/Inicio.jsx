@@ -12,6 +12,11 @@ export const Inicio = () =>{
             <form action="#" method="" className="index">
                 <Container>
                     <Row>
+                        <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
+                            <img className="img-fluid avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo"/>
+                        </div>
+                    </Row>
+                    <Row>
                         <div className="col-sm-12">
                             <input type="text" name="" id="srch" className="form-control text-center" placeHolder="Hola, mi nombre es Kevin, desarrolador web Full Stack"/>
                         </div>
