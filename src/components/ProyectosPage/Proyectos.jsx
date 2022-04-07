@@ -59,7 +59,7 @@ export const Proyectos = () =>{
                                         <input type="button" id="btn_ver" value="VER PROYECTO"/>
                                     </div>
                                     <div className="col text-right mr-2">
-                                        <a href="#" id="cf">Código fuente</a>
+                                        <a href="https://github.com/" id="cf">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -82,7 +82,7 @@ export const Proyectos = () =>{
                                         <input type="button" id="btn_ver" value="VER PROYECTO"/>
                                     </div>
                                     <div className="col text-right mr-2">
-                                        <a href="#" id="cf">Código fuente</a>
+                                        <a href="https://github.com/" id="cf">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
