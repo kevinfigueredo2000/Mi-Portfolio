@@ -2,7 +2,7 @@ import { Container,  Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./SobreMi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
 import Records from "../Records.json";
 
@@ -20,14 +20,14 @@ export const SobreMi = () =>{
                         <a className="col-sm-4 col-6 nav-link cv2 text-center " href="Kevincv.pdf" target="_blank">Descargar CV</a>
                     </Row>
                 </div>
-                <div className="col-12 mt-5 mt-sm-0 col-sm-6 text-center">
+                <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
                     <img className="img-fluid avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo"/>
                 </div>
             </Row>
             <hr/>
             <Container id="tecs" className="my-5">
                 <Row className="my-5">
-                    <div className="col mt-5">
+                    <div className="col">
                         <h2 id="htec">Stack Tecnológico</h2>
                     </div>
                 </Row>
@@ -37,7 +37,7 @@ export const SobreMi = () =>{
                             return(
                                 <div className="col-4 col-sm-2 mb-3">
                                     <div className="card shadow">
-                                        <img src={record.icon} className="img-fluid"/> <br/>
+                                        <img src={record.icon} className="imgflud cards"/> <br/>
                                         <h3 className="text-center tec">{record.caption}</h3>
                                     </div>
                                 </div>
@@ -146,6 +146,9 @@ export const SobreMi = () =>{
                     </Row>
                 </section>
             </Container>
+            <div>
+                <a href="https://web.whatsapp.com/" target="_blank" ><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
+            </div>  
         </Container>
     )
 }

@@ -9,7 +9,7 @@ import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg
 export const Footer = () =>{
     return(
         <>
-            <Container id="footer">
+            <Container id="footer" className="mb-4">
                 <Row>
                     <div className="col-sm m-auto">
                         <a href="https://github.com/kevinfigueredo2000" className="mr-2" target="_blank"><FontAwesomeIcon icon={faGithub} className="fab fa-github"/></a>
@@ -24,10 +24,7 @@ export const Footer = () =>{
                         <a href="" id="mail" >figueredo.kevin2000@gmail.com</a>
                     </div>
                 </Row>      
-            </Container>
-            <div id="footer">
-                <a href="https://web.whatsapp.com/" target="_blank" ><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
-            </div>  
+            </Container> 
         </>
     )
 }
