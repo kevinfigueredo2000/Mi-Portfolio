@@ -12,8 +12,8 @@ export const Inicio = () =>{
             <form action="#" method="" className="index">
                 <Container>
                     <Row>
-                        <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
-                            <img className="img-fluid avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo"/>
+                        <div className="text-center">
+                            <Link to="sobre-mi"><img className="avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo"/></Link>
                         </div>
                     </Row>
                     <Row>

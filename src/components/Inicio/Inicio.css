@@ -3,7 +3,7 @@
     border-color: black;
     background-color: transparent;
     margin-left: 13%;
-    margin-top: 50%;
+    margin-top: 4%;
 }
 .index .form-control{
     width: 75%;
@@ -27,5 +27,12 @@
     position: fixed;
 }
 .index{
-    margin-bottom: 5vh;
+    margin-bottom: 5%;
+}
+.avatar{
+    border-radius: 50%;
+    height: 50vh;
+    width: 50vh;
+    margin-top: 6%;
+    padding: 10px;
 }
