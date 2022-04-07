@@ -5,6 +5,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export const Contacto = () =>{
+    var Email = {}
+    const form = document.querySelector('.contact_form');
+    function sendMsg(e){
+        const name = document.querySelector('.name');
+        const email = document.querySelector('.email');
+        const msg = document.querySelector('.msg');
+
+        e.preventDefault();
+        const emlsnd = ()=>{
+        Email.send({
+            SecureToken : "412de410-0aa3-4836-98ef-7019bba9ff7b",
+            To : 'figueredo.kevin2000@gmail.com',
+            From : email.value,
+            Subject : "Formulario de contacto",
+            Body : msg.value
+        }).then(
+          message => alert(message)
+        );
+    }
+    form.addEventListener('submit', sendMsg);
+    }
     return(
         <>
             <Container className="mt-sm-4 contacto">
