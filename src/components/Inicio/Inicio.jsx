@@ -4,11 +4,12 @@ import { Container, Row } from "react-bootstrap";
 import "./Inicio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export const Inicio = () =>{
     return(
         <>
-            <form action="" method="" className="index">
+            <form action="#" method="" className="index">
                 <Container>
                     <Row>
                         <div className="col-sm-12">
@@ -17,13 +18,13 @@ export const Inicio = () =>{
                     </Row>
                     <Row className="text-center mt-4">
                         <div className="col-sm-12">
-                            <a href="" id="mmt">Mirá mi trabajo</a>
+                            <Link to="proyectos" id="mmt">Mirá mi trabajo</Link>
                         </div>
                     </Row>
                 </Container>
             </form>
             <div>
-                <a href="https://web.whatsapp.com/" target="_blank" ><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
             </div>  
         </>
     )
