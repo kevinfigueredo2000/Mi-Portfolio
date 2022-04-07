@@ -17,16 +17,16 @@ export const NavBar = () =>{
                             <ul className="nav-bar nav">
                                 <Row>
                                     <li className="nav-item col-sm">
-                                        <NavLink to="/" activeClassName="active" className=" nav-link  item">Inicio</NavLink>
+                                        <NavLink to="/" ClassName="active" className=" nav-link  item">Inicio</NavLink>
                                     </li>
                                     <li className="nav-item col-sm ">
-                                        <NavLink to="sobre-mi" activeClassName="active" className=" nav-link item">Sobremi</NavLink>
+                                        <NavLink to="sobre-mi" ClassName="active" className="nav-link item">Sobremi</NavLink>
                                     </li>
                                     <li className="nav-item col-sm">
-                                        <NavLink to="proyectos" activeClassName="active" className=" nav-link  item">Proyectos</NavLink>
+                                        <NavLink to="proyectos" ClassName="active" className=" nav-link  item">Proyectos</NavLink>
                                     </li>
                                     <li className="nav-item col-sm">
-                                        <NavLink to="contacto" activeClassName="active" className=" nav-link  item">Contacto</NavLink>
+                                        <NavLink to="contacto" ClassName="active" className=" nav-link  item">Contacto</NavLink>
                                     </li>
                                 </Row>
                             </ul>
