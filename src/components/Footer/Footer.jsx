@@ -21,7 +21,7 @@ export const Footer = () =>{
                         <a href="https://depcsuite.com/" target="_blank" rel="noreferrer" id="depc">DePCSuite</a>
                     </div>
                     <div className="col-sm m-auto">
-                        <a href="" id="mail" >figueredo.kevin2000@gmail.com</a>
+                        <a href="mailto:figueredo.kevin2000@gmail.com" id="mail" >figueredo.kevin2000@gmail.com</a>
                     </div>
                 </Row>      
             </Container> 
