@@ -9,31 +9,11 @@
 .sobre-mi .tec{
     font-size: 17px;
 }
-.sobre-mi .fa-graduation-cap{
-    font-size: 56px;
-}
-.sobre-mi .fa-briefcase{
-    font-size: 56px;
-}
 .sobre-mi .fa-comment-alt{
     font-size: 50px;
 }
 .sobre-mi .fa-star{
     font-size: 50px;
-}
-.sobre-mi #coder{
-    height: 9vh;
-}
-.sobre-mi #coderCard{
-    height: 26vh;
-}
-.sobre-mi #footer .fa-linkedin-in{
-    font-size: 25px;
-    color: white;
-    border-radius: 21px;
-    padding: 5px 6px 5px 6px;
-    background-color: black;
-    margin-top: 1px;
 }
 .sobre-mi .fa-linkedin-in{
     font-size: 25px;
@@ -43,21 +23,10 @@
     background-color: #370A6D;
     margin-top: 1px;
 }
-.sobre-mi #footer .fa-github{
-    color: #370A6D;
-    font-size: 35px;
-    margin-top: 1px;
-}
 .sobre-mi .fa-github{
     color: #370A6D;
     font-size: 35px;
     margin-top: 1px;
-}
-.sobre-mi #footer #mail{
-    color: #370A6D;
-}
-.sobre-mi #footer #depc{
-    color: #370A6D;
 }
 .sobre-mi .cv2{
     color: white;
@@ -87,20 +56,8 @@
     margin-right: 5px;
     margin-left: -4px;
 }
-.sobre-mi .vremprojo{
-    background-color: #370A6D;
-    text-decoration: none;
-    color: white;
-    border-radius: 25px;
-    padding: 6px 16px 6px 16px;
-    font-size: 13px;
-    margin-left: 80%;
-}
 .sobre-mi #tecolor{
     background-color: #370A6D;
-}
-.spann{
-    font-size: 10px;
 }
 .sobre-mi h4{
     font-size: 12px;
@@ -114,7 +71,7 @@
 .sobre-mi h1{
     font-size: 35px;
 }
-.cards{
+.imgscards{
     border-radius: 20px 20px 0px 0px;
     max-width: 100%;
     height: 19vh;
@@ -129,4 +86,7 @@
     bottom: 0px;
     left: 90%;
     position: fixed;
+}
+.fa-graduation-cap{
+    font-size: 56px;
 }

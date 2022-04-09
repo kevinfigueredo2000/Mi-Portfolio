@@ -16,7 +16,7 @@ export const ProyectosPage = () =>{
                 </Row>
                 <Row>
                     <div className="col-sm-6 mb-4">
-                        <p id="p1">Estos son los proyectos que aprendí y estoy capacitado a realizar. </p>
+                        <p id="p1">Estos son los proyectos que aprendí y estoy capacitado a realizar.</p>
                     </div>
                 </Row>      
                 <div className="inner">

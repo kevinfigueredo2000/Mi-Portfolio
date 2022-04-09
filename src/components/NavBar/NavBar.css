@@ -12,22 +12,6 @@
 .li:hover{
     color: #282828;
 }
-.na{
-    color: #282828;
-    margin-top: 5px;
-    border:solid;
-    border-color: red;
-    border-width:2px;
-    background-color: rgb(255, 255, 255);
-    border-radius:12px;
-    padding: 1px 7px 1px 7px;
-}
-.na:hover{
-    background-color: #370A6D;
-    color: white;
-    text-decoration: none;
-    border-color: transparent;
-}
 #cv{
     color:white;
     background-color: #370A6D;
@@ -42,5 +26,8 @@
     text-decoration: none;
 }
 .item{
+    color: white;
+}
+.item:hover{
     color: white;
 }

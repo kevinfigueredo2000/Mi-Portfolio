@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./SobreMi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCommentAlt, faGraduationCap, faStar } from "@fortawesome/free-solid-svg-icons";
 import StackTec from "../StackTec.json";
+import { SobreMiEstudios } from "../SobreMiEstudios/SobreMiEstudios";
 
 export const SobreMi = () =>{
     return(
@@ -21,7 +22,7 @@ export const SobreMi = () =>{
                     </Row>
                 </div>
                 <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
-                    <img className="img-fluid avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo"/>
+                    <img className="img-fluid avatar shadow" src="images/fotoKev5.jpg" alt="Kevin Figueredo"/>
                 </div>
             </Row>
             <hr/>
@@ -37,7 +38,7 @@ export const SobreMi = () =>{
                             return(
                                 <div className="col-6 col-sm-2 mb-3">
                                     <div className="card shadow">
-                                        <img src={stack.icon} className="imgflud cards" alt={stack.caption}/> <br/>
+                                        <img src={stack.icon} className="imgscards" alt={stack.caption}/> <br/>
                                         <h3 className="text-center tec">{stack.caption}</h3>
                                     </div>
                                 </div>
@@ -47,9 +48,9 @@ export const SobreMi = () =>{
                 </Row>        
             </Container>
             <hr/>
-            <Container className="idyh">
-                <div className="row my-5">
-                    <div className="col-sm-6 col-12 mb-3 mt-3">
+            <Container>
+                <Row className="my-5">
+                    <div className="col-sm-6 col-12 my-3">
                         <div className="card shadow">
                             <div className="row py-4 px-3"> 
                                 <div id="cardd" className="col-sm-3 col-5">
@@ -63,7 +64,7 @@ export const SobreMi = () =>{
                             </div>  
                         </div>
                     </div>  
-                    <div className="col-sm-6 col-12 mb-3 mt-3">
+                    <div className="col-sm-6 col-12 my-3">
                         <div className="card shadow">
                             <div className="row py-4 px-3"> 
                                 <div id="cardd" className="col-sm-3 col-5">
@@ -77,70 +78,19 @@ export const SobreMi = () =>{
                             </div>  
                         </div>
                     </div>
-                </div>
+                </Row>
             </Container>
             <hr/>
             <Container>
-                <section id="est">
-                    <Row className="mb-4 ml-4">
-                        <div className="col-sm-1 col-4 mt-4">
-                            <i className="fas fa-graduation-cap"></i>
+                    <Row className="ml-4 m-auto my-4">
+                        <div className="col-sm-1 col-4 mb-2">
+                            <FontAwesomeIcon icon={faGraduationCap} className="fa-graduation-cap"/>
                         </div>
                         <div>
-                            <h2 className="mt-5">Estudios</h2>
+                            <h2>Estudios</h2>
                         </div>
                     </Row>
-                    <Row className="mb-5"> 
-                        <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4 mb-5">
-                                <Row>
-                                    <div className="col-sm-3 col-3">
-                                        <img src="images/depc.png" alt=""/>
-                                    </div>
-                                    <div className="col">
-                                        <h3>Desarrollador Web Fullstack</h3>
-                                        <h3>DePC Suite</h3>
-                                        <h4>Agosto 2020-Enero 2021</h4>
-                                        <div>
-                                            <ul>
-                                                <li><span className="spann">ABM CLIENTES.</span></li>
-                                                <li><span className="spann">SISTEMA DE GESTIÓN DE VENTAS.</span></li>
-                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </Row>
-                                <Row>
-                                    <div>
-                                        <a className="vremprojo" target="_blank" href="https://depcsuite.com/?v=d72a48a8ebd2" rel="noreferrer">VER EMPRESA</a>
-                                    </div>
-                                </Row>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4" id="coderCard">
-                                <Row>
-                                    <div className="col-sm-3 col-3">
-                                        <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
-                                    </div>
-                                    <div className="col mb-5">
-                                        <h3>Curso React Js</h3>
-                                        <h3>Coder House</h3>
-                                        <h4>Diciembre 2021-Febrero 2022</h4>
-                                        <div>
-                                            <ul>
-                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <a className="vremprojo" target="_blank" href="https://www.coderhouse.com/" rel="noreferrer">VER EMPRESA</a>
-                                    </div>
-                                </Row>
-                            </div>
-                        </div>
-                    </Row>
-                </section>
+                    <SobreMiEstudios/>
             </Container>
             <div>
                 <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>

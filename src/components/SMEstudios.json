@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Desarrollador Web Fullstack",
+        "Empresa":"DePC Suite",
+        "fecha":"Agosto 2020-Enero 2021",
+        "trabajos": "ABM CLIENTES",
+        "icon": "images/depc.png",
+        "link":"https://depcsuite.com/?v=d72a48a8ebd2"
+    },
+    {
+        "id": 2,
+        "name": "React Js",
+        "Empresa":"Coder House",
+        "fecha":"Diciembre 2021-Febrero 2022",
+        "trabajos": "PROYECTO INTEGRADOR",
+        "icon": "images/coder.png",
+        "link":"https://www.coderhouse.com/"
+    }
+]
