@@ -24,3 +24,14 @@
     background-color: #E20000;
     color: black;
 }
+@media screen and (max-width: 767px){
+    #git{
+        margin-left: 150px;
+    }
+    #mail-responsive{
+        margin-top: 20px;
+    }
+    #footer{
+        margin-top: 50px;
+    }
+}

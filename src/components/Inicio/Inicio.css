@@ -36,3 +36,15 @@
     margin-top: 6%;
     padding: 10px;
 }
+@media screen and (max-width: 767px){
+    #fa-whatsapp{
+        padding: 16px 18px 18px 18px;
+        border-radius: 50%;
+        bottom: 51px;
+        left: 82%;
+        position: fixed;
+    }
+    .avatarindx{
+        height: 50vh;
+    }
+}

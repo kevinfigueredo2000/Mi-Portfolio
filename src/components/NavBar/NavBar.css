@@ -18,7 +18,9 @@
     text-decoration: none;
     border-radius:12px;
     padding: 2px 12px 3px 12px;
-    margin-left: 10px;
+    left: 99vh;
+    position: relative;
+    margin-top: -14px;
 }
 #cv:hover{
     background-color: #370A6D;
@@ -30,4 +32,28 @@
 }
 .item:hover{
     color: white;
+}
+.hamburger{
+    background-color: transparent;
+    display: none;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px){
+    .nav-ul{
+        display: none;
+        flex-direction: column;
+    }
+    .nav-ul.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+    #cv{
+        left: 31vh;
+        position: absolute;
+    }
 }

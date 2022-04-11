@@ -30,7 +30,7 @@ export const Inicio = () =>{
             </Container>
             
             <div>
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp" id="fa-whatsapp"/></a>
             </div>  
         </>
     )
