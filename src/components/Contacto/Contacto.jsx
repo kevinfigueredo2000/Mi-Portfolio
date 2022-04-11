@@ -20,9 +20,9 @@ export const Contacto = () =>{
                     <div className="col-12 col-sm-6">
                         <form action="#" className="contact_form">
                             <input type="text" name="txtNombre" id="nombre" placeholder="Nombre" className="shadow form-control name"/><br/>
-                            <input type="email" name="txtCorreo" id="email" placeholder="Email" className="shadow form-control email"/>
+                            <input type="email" name="txtCorreo" id="email" placeholder="Email" className="shadow form-control email mt-1 mb-3"/>
                             <textarea name="txtMensaje" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control msg"/>
-                            <div class="mr-0 text-right">
+                            <div className="mt-3">
                                 <input type="submit" value="Enviar" id="enviar"/>
                             </div>
                         </form>

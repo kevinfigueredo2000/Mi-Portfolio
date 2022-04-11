@@ -12,7 +12,7 @@ export const SobreMiEstudios = () =>{
                                 <div className="card shadow p-4 mb-5 ">
                                     <Row>
                                         <div className="col-sm-3 col-3">
-                                            <img src={estudios.icon} alt={estudios.Empresa} className="imgFluida"/>
+                                            <img src={estudios.icon} alt={estudios.Empresa} className="imgFluida" id="imgFluida"/>
                                         </div>
                                         <div className="col">
                                             <h3>{estudios.name}</h3>
@@ -25,7 +25,7 @@ export const SobreMiEstudios = () =>{
                                             </div>
                                         </div>
                                     </Row>
-                                    <div className="right col-sm-12 col-6">
+                                    <div className="ButtonRight col-sm-12 col-6">
                                         <a className="verEmpresa" target="_blank" href={estudios.link} rel="noreferrer">VER EMPRESA</a>
                                     </div>
                                 </div>

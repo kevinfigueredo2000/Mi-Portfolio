@@ -45,6 +45,12 @@
         position: fixed;
     }
     .avatarindx{
-        height: 50vh;
+        height: 43vh;
+        width: 43vh;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .index{
+        margin-bottom: 19%;
     }
 }

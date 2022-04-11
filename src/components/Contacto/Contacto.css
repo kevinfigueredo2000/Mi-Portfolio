@@ -37,7 +37,7 @@
     position: fixed;
 }
 .contacto{
-    margin-bottom: 30vh;
+    margin-bottom: 29vh;
 }
 @media screen and (max-width: 767px){
     #fa-whatsapp{
@@ -48,6 +48,6 @@
         position: fixed;
     }
     .contacto{
-        margin-bottom: 10px;
+        margin-bottom: -42px;
     }
 }
