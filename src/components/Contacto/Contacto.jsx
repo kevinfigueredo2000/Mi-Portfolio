@@ -30,7 +30,7 @@ export const Contacto = () =>{
                 </Row>               
             </Container>    
             <div>
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp" id="fa-whatsapp"/></a>
             </div>  
             <script src="https://smtpjs.com/v3/smtp.js"></script>
         </>

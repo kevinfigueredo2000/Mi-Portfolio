@@ -11,7 +11,7 @@ export const Proyectos = () =>{
                     <div className="card shadow mb-3">
                         <div className="mx-3 my-3">
                             <Row className="mb-3 mx-2">
-                                <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="img-fluid shadow" alt={projects.name}/></a>
+                                <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="imgFluida shadow" alt={projects.name}/></a>
                             </Row>
                             <Row className="sv">
                                 <h2 className="my-2 text-center">{projects.name}</h2>
@@ -20,7 +20,7 @@ export const Proyectos = () =>{
                                 <p>{projects.description}</p>
                             </Row>
                             <Container>
-                                <Row className="mb-5">
+                                <Row className="mb-5" id="Row-VOnline-CFuente">
                                     <div className="col-sm-8 col">
                                         <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
                                     </div>

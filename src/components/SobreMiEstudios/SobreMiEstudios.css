@@ -31,3 +31,12 @@
 .right{
     margin-left: 80%;
 }
+@media screen and (max-width: 767px){
+    .right{
+        margin-left: 65%;
+    }
+    .imgFluida{
+        max-width: 120%;
+        height: 9vh;
+    }
+}
