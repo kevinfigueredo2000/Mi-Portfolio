@@ -9,8 +9,8 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = () =>{
     const estadoBarra = ()=>{
-        document.getElementById("nav-ul").removeClass("show")
-        document.getElementById("nav-ul").classList.toggle("hide");
+        document.getElementsByName("nav-ul").removeClass("show")
+        document.getElementsByName("nav-ul").classList.toggle("hide");
     }
     return(
         <div className="bg-black py-3">
