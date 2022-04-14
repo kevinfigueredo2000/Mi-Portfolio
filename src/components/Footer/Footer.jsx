@@ -22,7 +22,7 @@ export const Footer = () =>{
                     </div>
                 </Row>      
                 <Row>
-                    <a href="https://wa.link/vrr03h" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp" id="fa-whatsapp"/></a>
+                    <a href="https://wa.link/i2wfg9" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp" id="fa-whatsapp"/></a>
                 </Row>
             </Container> 
         </>
