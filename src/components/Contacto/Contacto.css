@@ -4,7 +4,7 @@
 .contacto p{
     color: #6A6A6A;
 }
-.contacto #nombre{ 
+.contacto #name{ 
     margin-bottom: -15px;
     border-radius: 20px;
     border-color:transparent;
@@ -14,7 +14,7 @@
     border-radius: 20px;
     border-color:transparent;
 }
-.contacto #comentarios{
+.contacto #message{
     margin-bottom: 10px;
     border-radius: 20px;
     border-color:transparent;

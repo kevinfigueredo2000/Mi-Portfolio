@@ -32,9 +32,9 @@ export const Contacto = () =>{
                     </div>
                     <div className="col-12 col-sm-6">
                         <form onSubmit={sendEmail} ref={form} method="POST" action="">
-                            <input type="text" name="name" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
+                            <input type="text" name="name" id="name" placeholder="Nombre" className="shadow form-control"/><br/>
                             <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3"/>
-                            <textarea name="message" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
+                            <textarea name="message" id="message" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
                             <div className="mt-3">
                                 <input type="submit" value="Enviar" id="enviar"/>
                             </div>

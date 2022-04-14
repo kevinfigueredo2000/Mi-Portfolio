@@ -21,7 +21,7 @@ export const NavBar = () =>{
                                 }}>
                             <FontAwesomeIcon className="fas fa-bars" icon={faBars}></FontAwesomeIcon>
                         </button>
-                        <ul className="nav-bar nav nav-ul " id="nav-ul">
+                        <ul className="nav-bar nav nav-ul" id="nav-ul">
                             <li className="nav-item nav">
                                 <Link to="/" className=" nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Inicio</Link>
                             </li>
