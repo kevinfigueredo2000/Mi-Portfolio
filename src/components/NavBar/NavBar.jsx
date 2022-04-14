@@ -22,16 +22,16 @@ export const NavBar = () =>{
                         <ul className="nav-bar nav nav-ul " id="nav-ul">
                             <Row>
                                 <li className="nav-item col-sm">
-                                    <Link to="/" className="active nav-link  item">Inicio</Link>
+                                    <Link to="/" className="active nav-link item" activeClassName="active">Inicio</Link>
                                 </li>
                                 <li className="nav-item col-sm">
-                                    <Link to="sobre-mi" className="active nav-link item">Sobremi</Link>
+                                    <Link to="sobre-mi" className="active nav-link item" activeClassName="active">Sobremi</Link>
                                 </li>
                                 <li className="nav-item col-sm">
-                                    <Link to="proyectos" className="active nav-link  item">Proyectos</Link>
+                                    <Link to="proyectos" className="active nav-link item" activeClassName="active">Proyectos</Link>
                                 </li>
                                 <li className="nav-item col-sm">
-                                    <Link to="contacto" className="active nav-link  item">Contacto</Link>
+                                    <Link to="contacto" className="active nav-link item" activeClassName="active">Contacto</Link>
                                 </li>
                             </Row>
                         </ul>
