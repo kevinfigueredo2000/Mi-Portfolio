@@ -22,16 +22,16 @@ export const NavBar = () =>{
                             <FontAwesomeIcon className="fas fa-bars" icon={faBars}></FontAwesomeIcon>
                         </button>
                         <ul className="nav-bar nav nav-ul" id="nav-ul">
-                            <li className="nav-item nav">
+                            <li className="nav-item ">
                                 <Link to="/" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Inicio</Link>
                             </li>
-                            <li className="nav-item nav">
+                            <li className="nav-item ">
                                 <Link to="sobre-mi" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Sobre mi</Link>
                             </li>
-                            <li className="nav-item nav">
+                            <li className="nav-item ">
                                 <Link to="proyectos" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Proyectos</Link>
                             </li>
-                            <li className="nav-item nav">
+                            <li className="nav-item ">
                                 <Link to="contacto" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Contacto</Link>
                             </li>
                         </ul>
