@@ -4,7 +4,7 @@ import "./NavBar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faDownload } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () =>{
@@ -23,16 +23,16 @@ export const NavBar = () =>{
                         </button>
                         <ul className="nav-bar nav nav-ul" id="nav-ul">
                             <li className="nav-item nav">
-                                <Link to="/" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Inicio</Link>
+                                <NavLink to="/" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Inicio</NavLink>
                             </li>
                             <li className="nav-item nav">
-                                <Link to="sobre-mi" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Sobre mi</Link>
+                                <NavLink to="sobre-mi" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Sobre mi</NavLink>
                             </li>
                             <li className="nav-item nav">
-                                <Link to="proyectos" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Proyectos</Link>
+                                <NavLink to="proyectos" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Proyectos</NavLink>
                             </li>
                             <li className="nav-item nav">
-                                <Link to="contacto" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Contacto</Link>
+                                <NavLink to="contacto" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Contacto</NavLink>
                             </li>
                         </ul>
                         <div>
