@@ -4,8 +4,10 @@ import "./Contacto.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import emailjs from "emailjs-com"
+import { useRef } from "react";
 
 export const Contacto = () =>{
+    const form = useRef();
     function sendEmail(e){
         e.preventDefault();
     
@@ -30,10 +32,10 @@ export const Contacto = () =>{
                         <p>Cualquier consulta o duda deje su mensaje en el formulario de contacto o bien un Whatsapp mediante el botón de la esquina inferior derecha.</p>
                     </div>
                     <div className="col-12 col-sm-6">
-                        <form onSubmit={sendEmail}>
-                            <input type="text" name="name" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
-                            <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3"/>
-                            <textarea name="msg" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <input type="text" name="user_name" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
+                            <input type="email" name="user_email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3"/>
+                            <textarea name="message" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
                             <div className="mt-3">
                                 <input type="submit" value="Enviar" id="enviar"/>
                             </div>
