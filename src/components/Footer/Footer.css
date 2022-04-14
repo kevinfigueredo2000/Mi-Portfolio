@@ -34,4 +34,11 @@
     #footer{
         margin-top: 50px;
     }
+    #fa-whatsapp{
+        padding: 16px 18px 18px 18px;
+        border-radius: 50%;
+        bottom: 51px;
+        left: 77%;
+        position: fixed;
+    }
 }

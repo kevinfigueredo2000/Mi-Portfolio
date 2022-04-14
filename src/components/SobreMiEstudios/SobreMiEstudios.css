@@ -26,17 +26,23 @@
 }
 .imgFluida{
     max-width: 100%;
-    height: 9vh;
+    height: 10vh;
+    margin-left: 1vh;
 }
 .ButtonRight{
-    margin-left: 80%;
+    float: right;
 }
+.verEmpresa{
+    float: right;
+}
+
 @media screen and (max-width: 767px){
-    .ButtonRight{
-        margin-left: 60%;
-    }
     #imgFluida{
-        max-width: 126%;
-        height: 10vh;
+        max-width: 9vh;
+        height: 9vh;
+        margin-left: -1vh;
+    }
+    #verEmpresa{
+        float: right;
     }
 }

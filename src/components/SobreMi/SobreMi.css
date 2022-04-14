@@ -91,13 +91,6 @@
     font-size: 56px;
 }
 @media screen and (max-width: 767px){
-    #fa-whatsapp{
-        padding: 16px 18px 18px 18px;
-        border-radius: 50%;
-        bottom: 51px;
-        left: 77%;
-        position: fixed;
-    }
     .sobre-mi{
         margin-bottom: -64px;
     }

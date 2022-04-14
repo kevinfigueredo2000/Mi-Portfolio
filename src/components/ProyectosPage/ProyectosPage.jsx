@@ -22,11 +22,7 @@ export const ProyectosPage = () =>{
                 <div className="inner">
                     <Proyectos/>
                 </div>    
-                
             </Container>
-            <div>
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp" id="fa-whatsapp"/></a>
-            </div>  
         </>
     )
 }

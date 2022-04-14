@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap"
 import "./Footer.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 
 export const Footer = () =>{
@@ -21,6 +21,9 @@ export const Footer = () =>{
                         <a href="mailto:figueredo.kevin2000@gmail.com" id="mail" >figueredo.kevin2000@gmail.com</a>
                     </div>
                 </Row>      
+                <Row>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp" id="fa-whatsapp"/></a>
+                </Row>
             </Container> 
         </>
     )
