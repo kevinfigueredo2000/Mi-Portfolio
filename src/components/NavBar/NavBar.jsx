@@ -8,10 +8,6 @@ import { Link } from "react-router-dom";
 
 
 export const NavBar = () =>{
-    const estadoBarra = ()=>{
-        document.getElementById("nav-ul").removeClass("show")
-        document.getElementById("nav-ul").classList.toggle("hide");
-    }
     return(
         <div className="bg-black py-3">
             <Container>
@@ -23,16 +19,16 @@ export const NavBar = () =>{
                         </button>
                         <ul className="nav-bar nav nav-ul" id="nav-ul">
                             <li className="nav-item ">
-                                <Link to="/" className="nav-link item" onClick={()=>{estadoBarra()}}>Inicio</Link>
+                                <Link to="/" className="nav-link item" >Inicio</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="sobre-mi" className="nav-link item" onClick={()=>{estadoBarra()}}>Sobre mi</Link>
+                                <Link to="sobre-mi" className="nav-link item" >Sobre mi</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="proyectos" className="nav-link item" onClick={()=>{estadoBarra()}}>Proyectos</Link>
+                                <Link to="proyectos" className="nav-link item" >Proyectos</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="contacto" className="nav-link item" onClick={()=>{estadoBarra()}}>Contacto</Link>
+                                <Link to="contacto" className="nav-link item" >Contacto</Link>
                             </li>
                         </ul>
                         <div id="cvv">

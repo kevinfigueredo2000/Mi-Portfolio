@@ -1,10 +1,11 @@
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contacto.css"
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from "emailjs-com"
 
 export const Contacto = () =>{
+    const [alertaMensaje, setAlertaMensaje] = useState(true);
     const form = useRef();
 
     function sendEmail(e){
@@ -13,6 +14,7 @@ export const Contacto = () =>{
         emailjs.sendForm('gmail', 'template_2nq5sgn', e.target, 'mv7GgMROqQAEVm9eV')
           .then((result) => {
               console.log(result.text);
+              setAlertaMensaje(false);
           }, (error) => {
               console.log(error.text);
           });
@@ -35,6 +37,11 @@ export const Contacto = () =>{
                             <input type="text" name="name" id="name" placeholder="Nombre" className="shadow form-control"/><br/>
                             <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3"/>
                             <textarea name="message" id="message" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
+                            <div id="alertaMensaje">
+                                <div className="alert alert-success" hidden={alertaMensaje} role="alert">
+                                    ¡Se ha enviado el mensaje correctamente!
+                                </div>
+                            </div>
                             <div className="mt-3">
                                 <input type="submit" value="Enviar" id="enviar"/>
                             </div>
