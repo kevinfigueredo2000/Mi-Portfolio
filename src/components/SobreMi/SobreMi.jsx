@@ -2,7 +2,7 @@ import { Container,  Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./SobreMi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faCommentAlt, faGraduationCap, faStar } from "@fortawesome/free-solid-svg-icons";
 import StackTec from "../StackTec.json";
 import { SobreMiEstudios } from "../SobreMiEstudios/SobreMiEstudios";
