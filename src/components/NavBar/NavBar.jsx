@@ -4,7 +4,7 @@ import "./NavBar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faDownload } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export const NavBar = () =>{
@@ -23,16 +23,16 @@ export const NavBar = () =>{
                         </button>
                         <ul className="nav-bar nav nav-ul" id="nav-ul">
                             <li className="nav-item nav">
-                                <NavLink to="/" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Inicio</NavLink>
+                                <Link to="/" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Inicio</Link>
                             </li>
                             <li className="nav-item nav">
-                                <NavLink to="sobre-mi" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Sobre mi</NavLink>
+                                <Link to="sobre-mi" className="nav-link item" activeClassName="active" >Sobre mi</Link>
                             </li>
                             <li className="nav-item nav">
-                                <NavLink to="proyectos" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Proyectos</NavLink>
+                                <Link to="proyectos" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Proyectos</Link>
                             </li>
                             <li className="nav-item nav">
-                                <NavLink to="contacto" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Contacto</NavLink>
+                                <Link to="contacto" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Contacto</Link>
                             </li>
                         </ul>
                         <div>
