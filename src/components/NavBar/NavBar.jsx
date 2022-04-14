@@ -9,30 +9,30 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () =>{
     const estadoBarra = ()=>{
-        document.getElementsByClassName("nav-ul").removeClass("show")
-        document.getElementsByClassName("nav-ul").classList.toggle("hide");
+        document.getElementById("nav-ul").removeClass("show")
+        document.getElementById("nav-ul").classList.toggle("hide");
     }
     return(
         <div className="bg-black py-3">
             <Container>
                     <Navbar>
-                        <button className="hamburger" id="hamburger"  onClick={()=>{
+                        <button className="hamburger" id="hamburger" onClick={()=>{
                                 document.getElementById("nav-ul").classList.toggle("show");
                             }}>
-                            <FontAwesomeIcon className="fas fa-bars" icon={faBars}></FontAwesomeIcon>
+                            <FontAwesomeIcon className="fas fa-bars" icon={faBars}/>
                         </button>
                         <ul className="nav-bar nav nav-ul" id="nav-ul">
                             <li className="nav-item ">
-                                <Link to="/" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Inicio</Link>
+                                <Link to="/" className="nav-link item" onClick={()=>{estadoBarra()}}>Inicio</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="sobre-mi" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Sobre mi</Link>
+                                <Link to="sobre-mi" className="nav-link item" onClick={()=>{estadoBarra()}}>Sobre mi</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="proyectos" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Proyectos</Link>
+                                <Link to="proyectos" className="nav-link item" onClick={()=>{estadoBarra()}}>Proyectos</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="contacto" className="nav-link item" activeClassName="active" onClick={()=>{estadoBarra()}}>Contacto</Link>
+                                <Link to="contacto" className="nav-link item" onClick={()=>{estadoBarra()}}>Contacto</Link>
                             </li>
                         </ul>
                         <div>
