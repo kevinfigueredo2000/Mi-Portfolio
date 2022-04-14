@@ -23,16 +23,16 @@ export const NavBar = () =>{
                         </button>
                         <ul className="nav-bar nav nav-ul" id="nav-ul">
                             <li className="nav-item ">
-                                <Link to="/" className="nav-link item" onClick={estadoBarra}>Inicio</Link>
+                                <Link to="/" className="nav-link item" onClick={()=>{estadoBarra()}}>Inicio</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="sobre-mi" className="nav-link item" onClick={estadoBarra}>Sobre mi</Link>
+                                <Link to="sobre-mi" className="nav-link item" onClick={()=>{estadoBarra()}}>Sobre mi</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="proyectos" className="nav-link item" onClick={estadoBarra}>Proyectos</Link>
+                                <Link to="proyectos" className="nav-link item" onClick={()=>{estadoBarra()}}>Proyectos</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="contacto" className="nav-link item" onClick={estadoBarra}>Contacto</Link>
+                                <Link to="contacto" className="nav-link item" onClick={()=>{estadoBarra()}}>Contacto</Link>
                             </li>
                         </ul>
                         <div id="cvv">
