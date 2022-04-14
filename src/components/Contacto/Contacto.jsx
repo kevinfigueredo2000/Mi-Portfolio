@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contacto.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import emailjs from "emailjs-com"
+import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 
 export const Contacto = () =>{
