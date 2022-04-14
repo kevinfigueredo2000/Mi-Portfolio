@@ -24,7 +24,7 @@
 .sobre-mi .card{
     border-radius: 20px ;
 }
-.imgFluida{
+#imgFluida{
     max-width: 100%;
     height: 10vh;
     margin-left: 1vh;

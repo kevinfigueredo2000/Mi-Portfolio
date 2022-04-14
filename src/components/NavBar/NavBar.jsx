@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 
 export const NavBar = () =>{
-    const estadoBarra = ()=>{
+    function estadoBarra(){
         document.getElementById("nav-ul").removeClass("show")
         document.getElementById("nav-ul").classList.toggle("hide");
     }
@@ -35,7 +35,7 @@ export const NavBar = () =>{
                                 <Link to="contacto" className="nav-link item" onClick={()=>{estadoBarra()}}>Contacto</Link>
                             </li>
                         </ul>
-                        <div>
+                        <div id="cvv">
                             <a href="kfcv.pdf" id="cv" download="kfcv.pdf">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
                         </div>
                     </Navbar>
