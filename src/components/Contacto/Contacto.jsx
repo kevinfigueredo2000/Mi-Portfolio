@@ -9,7 +9,7 @@ export const Contacto = () =>{
     function sendEmail(e){
         e.preventDefault();
     
-        emailjs.sendForm('gmail', 'template_2nq5sgn', e.target, 'mv7GgMROqQAEVm9eV')
+        emailjs.sendForm('gmail', 'template_2nq5sgn', e.target, 'EAR5jIABqBS_-A0JoX0V6')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
