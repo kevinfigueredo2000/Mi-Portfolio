@@ -21,34 +21,32 @@ export const Contacto = () =>{
           e.target.reset();
       };
     return(
-        <>
-            <Container className="mt-4 contacto" id="Contacto">
-                <Row>
-                    <div className="col mb-2">
-                        <h1>Contacto</h1>
-                    </div>
-                </Row>     
-                <Row>
-                    <div className="col-sm col-12">
-                        <p>Cualquier consulta o duda deje su mensaje en el formulario de contacto o bien un Whatsapp mediante el botón de la esquina inferior derecha.</p>
-                    </div>
-                    <div className="col-12 col-sm-6">
-                        <form onSubmit={sendEmail} ref={form} method="POST" action="">
-                            <input type="text" name="name" id="name" placeholder="Nombre" className="shadow form-control"/><br/>
-                            <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3"/>
-                            <textarea name="message" id="message" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
-                            <div id="alertaMensaje">
-                                <div className="alert alert-success" hidden={alertaMensaje} role="alert">
-                                    ¡Se ha enviado el mensaje correctamente!
-                                </div>
+        <Container className="mt-4 contacto" id="Contacto">
+            <Row>
+                <div className="col mb-2">
+                    <h2>Contacto</h2>
+                </div>
+            </Row>     
+            <Row>
+                <div className="col-sm col-12">
+                    <p>Cualquier consulta o duda deje su mensaje en el formulario de contacto o bien un Whatsapp mediante el botón de la esquina inferior derecha.</p>
+                </div>
+                <div className="col-12 col-sm-6">
+                    <form onSubmit={sendEmail} ref={form} method="POST" action="">
+                        <input type="text" name="name" id="name" placeholder="Nombre" className="shadow form-control"/><br/>
+                        <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3"/>
+                        <textarea name="message" id="message" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
+                        <div id="alertaMensaje">
+                            <div className="alert alert-success" hidden={alertaMensaje} role="alert">
+                                ¡Se ha enviado el mensaje correctamente!
                             </div>
-                            <div className="mt-3">
-                                <input type="submit" value="Enviar" id="enviar"/>
-                            </div>
-                        </form>
-                    </div>
-                </Row>               
-            </Container>     
-        </>
+                        </div>
+                        <div className="mt-3">
+                            <input type="submit" value="Enviar" id="enviar"/>
+                        </div>
+                    </form>
+                </div>
+            </Row>               
+        </Container>     
     )
 }

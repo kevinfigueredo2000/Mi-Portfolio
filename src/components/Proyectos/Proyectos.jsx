@@ -14,7 +14,7 @@ export const Proyectos = () =>{
                                 <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="imgFluida shadow" alt={projects.name}/></a>
                             </Row>
                             <Row className="sv">
-                                <h2 className="my-2 text-center">{projects.name}</h2>
+                                <h2 className="my-2 text-center nombres-pr">{projects.name}</h2>
                             </Row>
                             <Row className="mx-1 my-3 desc">
                                 <p>{projects.description}</p>

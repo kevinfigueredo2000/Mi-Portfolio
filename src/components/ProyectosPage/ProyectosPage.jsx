@@ -9,7 +9,7 @@ export const ProyectosPage = () =>{
             <Container className="proyectos" id="Proyectos">
                 <Row>
                     <div className="col mb-3 mt-4">
-                        <h1>Mis proyectos</h1>
+                        <h2>Mis proyectos</h2>
                     </div>
                 </Row>
                 <Row>
