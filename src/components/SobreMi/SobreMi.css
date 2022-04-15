@@ -113,7 +113,8 @@ h1{
         margin-top: -6vh;
     }
     .sobre-mi .avatar{
-        height: 43vh;
+        height: 41vh;
         width: 43vh;
+        margin-bottom: -6%;
     }
 }
