@@ -106,6 +106,7 @@ h1{
 @media screen and (max-width: 767px){
     .sobre-mi{
         margin-bottom: -64px;
+        margin-top: -6vh;
     }
     .sobre-mi .avatar{
         height: 43vh;
