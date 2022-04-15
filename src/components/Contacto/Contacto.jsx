@@ -22,7 +22,7 @@ export const Contacto = () =>{
       };
     return(
         <>
-            <Container className="mt-4 contacto">
+            <Container className="mt-4 contacto" id="Contacto">
                 <Row>
                     <div className="col mb-2">
                         <h1>Contacto</h1>

@@ -19,16 +19,16 @@ export const NavBar = () =>{
                         </button>
                         <ul className="nav-bar nav nav-ul" id="nav-ul">
                             <li className="nav-item ">
-                                <Link to="/" className="nav-link item" >Inicio</Link>
+                                <a href="#Sobre-mi" className="nav-link item">Inicio</a>
                             </li>
                             <li className="nav-item ">
-                                <Link to="sobre-mi" className="nav-link item" >Sobre mi</Link>
+                                <a href="#Proyectos" className="nav-link item">Proyectos</a>
                             </li>
                             <li className="nav-item ">
-                                <Link to="proyectos" className="nav-link item" >Proyectos</Link>
+                                <a href="#Estudios" className="nav-link item">Estudios</a>
                             </li>
                             <li className="nav-item ">
-                                <Link to="contacto" className="nav-link item" >Contacto</Link>
+                                <a href="#Contacto" className="nav-link item">Contacto</a>
                             </li>
                         </ul>
                         <div id="cvv">

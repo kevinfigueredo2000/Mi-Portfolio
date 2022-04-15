@@ -6,7 +6,7 @@ import { Proyectos } from "../Proyectos/Proyectos";
 export const ProyectosPage = () =>{
     return(
         <>
-            <Container className="proyectos">
+            <Container className="proyectos" id="Proyectos">
                 <Row>
                     <div className="col mb-3 mt-4">
                         <h1>Mis proyectos</h1>

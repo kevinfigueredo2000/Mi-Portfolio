@@ -8,7 +8,7 @@ export const Proyectos = () =>{
         <Row>{
             ProjectsJsn && ProjectsJsn.map( projects =>{
                 return(<div className="col-sm-4">
-                    <div className="card shadow mb-3">
+                    <div className="card shadow mb-5">
                         <div className="mx-3 my-3">
                             <Row className="mb-3 mx-2">
                                 <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="imgFluida shadow" alt={projects.name}/></a>
