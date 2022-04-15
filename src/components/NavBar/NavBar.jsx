@@ -4,8 +4,6 @@ import "./NavBar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faDownload } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
-
 
 export const NavBar = () =>{
     return(
