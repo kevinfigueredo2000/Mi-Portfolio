@@ -25,7 +25,7 @@ export const SobreMiEstudios = () =>{
                                             </div>
                                         </div>
                                     </Row>
-                                    <div className="col-sm-12 col-12" >
+                                    <div className="col-sm-12 col-12">
                                         <a className="verEmpresa" target="_blank" id="verEmpresa" href={estudios.link} rel="noreferrer">VER EMPRESA</a>
                                     </div>
                                 </div>

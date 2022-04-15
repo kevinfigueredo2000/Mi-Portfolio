@@ -6,6 +6,9 @@
     border: 1px solid ;
     border-radius: .25rem;
 }
+#cvv{
+    width: 72%;
+}
 .li{
     color: #282828;
 }
@@ -18,14 +21,15 @@
     text-decoration: none;
     border-radius:12px;
     padding: 2px 12px 3px 12px;
-    left: 99vh;
-    position: relative;
-    margin-top: -14px;
+    float: right;
 }
 #cv:hover{
     background-color: #370A6D;
     color: white;
     text-decoration: none;
+}
+.nav-ul{
+    flex-direction: row;
 }
 .item{
     color: white;
@@ -53,7 +57,9 @@
         display: block;
     }
     #cv{
-        left: 50%;
-        position: absolute;
+        float: right;
+    }
+    #cvv{
+        width: 90%;
     }
 }

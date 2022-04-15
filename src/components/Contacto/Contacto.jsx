@@ -41,7 +41,7 @@ export const Contacto = () =>{
                                 ¡Se ha enviado el mensaje correctamente!
                             </div>
                         </div>
-                        <div className="mt-3">
+                        <div className="mt-3 col-12 col-sm-12">
                             <input type="submit" value="Enviar" id="enviar"/>
                         </div>
                     </form>

@@ -1,28 +1,29 @@
-.contacto main{
+main{
     margin-top: 4%;
 }
-.contacto p{
+p{
     color: #6A6A6A;
 }
-.contacto #name{ 
+#name{ 
     margin-bottom: -15px;
     border-radius: 20px;
     border-color:transparent;
 }
-.contacto #email{
+#email{
     margin-bottom: 10px;
     border-radius: 20px;
     border-color:transparent;
 }
-.contacto #message{
+#message{
     margin-bottom: 10px;
     border-radius: 20px;
     border-color:transparent;
 }
-.contacto #enviar{
+#enviar{
     border-radius: 20px;
     border-color:transparent;
     background-color: #370A6D;
+    float: right;
     color: white;
     padding: 6px 42px 6px 42px;
 }
@@ -45,5 +46,8 @@
 @media screen and (max-width: 767px){
     .contacto{
         margin-bottom: 18vh;
+    }
+    #enviar{
+        float: right;
     }
 }

@@ -15,7 +15,7 @@ export const NavBar = () =>{
                             }}>
                             <FontAwesomeIcon className="fas fa-bars" icon={faBars}/>
                         </button>
-                        <ul className="nav-bar nav nav-ul" id="nav-ul">
+                        <ul className="nav nav-ul" id="nav-ul">
                             <li className="nav-item ">
                                 <a href="#Sobre-mi" className="nav-link item">Inicio</a>
                             </li>

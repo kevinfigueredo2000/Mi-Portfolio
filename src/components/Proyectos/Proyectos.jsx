@@ -25,7 +25,7 @@ export const Proyectos = () =>{
                                         <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
                                     </div>
                                     <div className="col-sm-4 col">
-                                        <a href={projects.link} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
+                                        <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </Container>
