@@ -45,6 +45,12 @@
     font-size: 20px;
     cursor: pointer;
 }
+#nav{
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
 @media screen and (max-width: 767px){
     .nav-ul{
         display: none;
@@ -66,5 +72,6 @@
         position: sticky;
         top: 0px;
         width: 100%;
+        z-index: 1;
     }
 }
