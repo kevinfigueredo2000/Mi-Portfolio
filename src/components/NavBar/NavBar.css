@@ -62,4 +62,9 @@
     #cvv{
         width: 90%;
     }
+    #nav{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+    }
 }

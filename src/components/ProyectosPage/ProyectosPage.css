@@ -19,4 +19,8 @@
     .proyectos{
         margin-bottom: -5vh;
     }    
+    .proyectos .card{
+        border-radius: 18px;
+        height: 85%;
+    }
 }

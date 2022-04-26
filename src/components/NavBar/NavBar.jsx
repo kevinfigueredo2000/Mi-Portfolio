@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export const NavBar = () =>{
     return(
-        <div className="bg-black py-3">
+        <div className="bg-black py-3" id="nav">
             <Container>
                     <Navbar>
                         <button className="hamburger" id="hamburger" onClick={()=>{
