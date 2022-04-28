@@ -20,9 +20,9 @@ export const SobreMiEstudios = () =>{
                                             <h4>{estudios.fecha}</h4>
                                             <div>
                                                 <ul>
-                                                    {estudios.trabajos && estudios.trabajos.map(proyectos=>{
+                                                    {estudios.trabajos && estudios.trabajos.map(trabajo=>{
                                                         return(
-                                                            <li><span className="trabajos">{proyectos}</span></li>
+                                                            <li><span className="trabajos">{trabajo}</span></li>
                                                         )
                                                     })}
                                                 </ul>
