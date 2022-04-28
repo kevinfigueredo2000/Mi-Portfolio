@@ -6,7 +6,7 @@ export const SobreMiEstudios = () =>{
         return(
             <Container>
                 <Row className="mb-5"> 
-                    {SMEstudios.map( estudios =>{
+                    {SMEstudios && SMEstudios.map( estudios =>{
                         return(
                             <div className="col-sm-6 col-12">
                                 <div className="card shadow p-4 mb-5 ">
