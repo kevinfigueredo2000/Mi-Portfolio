@@ -11,7 +11,7 @@ import { Contacto } from "../Contacto/Contacto";
 
 export const SobreMi = () =>{
     return(
-        <Container className="sobre-mi"id="Sobre-mi">
+        <Container className="sobre-mi" id="Sobre-mi">
             <Row >
                 <div className="col-sm-6">
                     <p className="my-3" id="Hola">Hola, mi nombre es</p>
