@@ -111,6 +111,9 @@ h1{
     .sobre-mi{
         margin-bottom: -64px;
     }
+    #Sobre-mi{
+        margin-top: 0vh;
+    }
     .sobre-mi .avatar{
         height: 43vh;
         width: 43vh;
