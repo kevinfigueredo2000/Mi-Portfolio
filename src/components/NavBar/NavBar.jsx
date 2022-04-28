@@ -19,7 +19,7 @@ export const NavBar = () =>{
         ubicacionPrincipal = Desplazamiento_Actual;
     }
     return(
-        <div className="bg-black py-3" id="nav" style="scroll-behavior: smooth">
+        <div className="bg-black py-3" id="nav">
             <Container>
                     <Navbar>
                         <button className="hamburger" id="hamburger" onClick={()=>{
