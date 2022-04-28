@@ -6,6 +6,16 @@ import { faBars, faDownload } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const NavBar = () =>{
+    let ubicacionPrincipal = window.pageYOffset;
+    window.onscroll = function(){
+        let Desplazamiento_Actual = window.pageYOffset;
+        if(ubicacionPrincipal >= Desplazamiento_Actual){
+            document.getElementById('nav').style.top = '0';
+        }else{
+            document.getElementById('nav').style.top = '-100px';
+        }
+        ubicacionPrincipal = Desplazamiento_Actual;
+    }
     return(
         <div className="bg-black py-3" id="nav">
             <Container>
