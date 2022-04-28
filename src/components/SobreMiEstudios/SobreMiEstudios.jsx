@@ -20,7 +20,7 @@ export const SobreMiEstudios = () =>{
                                             <h4>{estudios.fecha}</h4>
                                             <div>
                                                 <ul>
-                                                    {estudios.trabajos && estudios.trabajos.map(proyectos=>{
+                                                    {SMEstudios.trabajos && SMEstudios.trabajos.map(proyectos=>{
                                                         return(
                                                             <li><span className="trabajos">{proyectos}</span></li>
                                                         )
