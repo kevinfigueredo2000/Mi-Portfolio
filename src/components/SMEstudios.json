@@ -4,7 +4,7 @@
         "name": "Desarrollador Web Fullstack",
         "Empresa":"DePC Suite",
         "fecha":"Agosto 2020-Enero 2021",
-        "trabajos": "ABM CLIENTES",
+        "trabajos": ["ABM CLIENTES"],
         "icon": "images/depc.png",
         "link":"https://depcsuite.com/?v=d72a48a8ebd2"
     },
