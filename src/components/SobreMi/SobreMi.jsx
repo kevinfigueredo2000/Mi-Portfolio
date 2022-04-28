@@ -11,8 +11,8 @@ import { Contacto } from "../Contacto/Contacto";
 
 export const SobreMi = () =>{
     return(
-        <Container className="sobre-mi">
-            <Row id="Sobre-mi">
+        <Container className="sobre-mi"id="Sobre-mi">
+            <Row >
                 <div className="col-sm-6">
                     <p className="my-3" id="Hola">Hola, mi nombre es</p>
                     <h1 id="hsob">Kevin Figueredo</h1>
@@ -87,8 +87,8 @@ export const SobreMi = () =>{
                 </Row>
             </Container>
             <hr/>
-            <Container>
-                <Row className="ml-4 m-auto my-4" id="Estudios">
+            <Container id="Estudios">
+                <Row className="ml-4 m-auto my-4">
                     <div className="col-sm-1 col-4 mb-2">
                         <FontAwesomeIcon icon={faGraduationCap} className="fa-graduation-cap"/>
                     </div>
