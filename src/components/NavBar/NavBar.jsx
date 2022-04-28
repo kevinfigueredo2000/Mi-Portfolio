@@ -23,22 +23,35 @@ export const NavBar = () =>{
             <Container>
                     <Navbar>
                         <button className="hamburger" id="hamburger" onClick={()=>{
-                                document.getElementById("nav-ul").classList.toggle("show");
+                                document.getElementById("nav-ul").classList.toggle("show")
+                                document.getElementById("nav-ul").classList.remove("d-none");
                             }}>
                             <FontAwesomeIcon className="fas fa-bars" icon={faBars}/>
                         </button>
                         <ul className="nav nav-ul" id="nav-ul">
                             <li className="nav-item ">
-                                <a href="#Sobre-mi" className="nav-link item">Inicio</a>
+                                <a href="#Sobre-mi" className="nav-link item" onClick={()=>{
+                                    document.getElementById("nav-ul").classList.toggle("d-none");
+                                    document.getElementById("nav-ul").classList.remove("show");
+                            }}>Inicio</a>
                             </li>
                             <li className="nav-item ">
-                                <a href="#Proyectos" className="nav-link item">Proyectos</a>
+                                <a href="#Proyectos" className="nav-link item" onClick={()=>{
+                                    document.getElementById("nav-ul").classList.toggle("d-none");
+                                    document.getElementById("nav-ul").classList.remove("show");
+                            }}>Proyectos</a>
                             </li>
                             <li className="nav-item ">
-                                <a href="#Estudios" className="nav-link item">Estudios</a>
+                                <a href="#Estudios" className="nav-link item" onClick={()=>{
+                                    document.getElementById("nav-ul").classList.toggle("d-none");
+                                    document.getElementById("nav-ul").classList.remove("show");
+                            }}>Estudios</a>
                             </li>
                             <li className="nav-item ">
-                                <a href="#Contacto" className="nav-link item">Contacto</a>
+                                <a href="#Contacto" className="nav-link item" onClick={()=>{
+                                    document.getElementById("nav-ul").classList.toggle("d-none");
+                                    document.getElementById("nav-ul").classList.remove("show");
+                            }}>Contacto</a>
                             </li>
                         </ul>
                         <div id="cvv">
