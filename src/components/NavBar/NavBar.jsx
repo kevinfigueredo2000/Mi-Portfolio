@@ -10,13 +10,17 @@ export const NavBar = () =>{
     window.onscroll = function(){
         let Desplazamiento_Actual = window.pageYOffset;
         if(ubicacionPrincipal >= Desplazamiento_Actual){
-            document.getElementById('nav').classList = 'smooth-scroll bg-black py-3';
+            document.getElementById('nav').classList = 'py-3 myStyle';
             document.getElementById('nav').style.top = '0';
         }else{
-            document.getElementById('nav').classList = 'smooth-scroll bg-black py-3';
+            document.getElementById('nav').classList = 'py-3 myStyle';
             document.getElementById('nav').style.top = '-100px';
         }
         ubicacionPrincipal = Desplazamiento_Actual;
+    }
+    function clickearCerrar(){
+        document.getElementById("nav-ul").classList.toggle("show")
+        document.getElementById("nav-ul").classList.remove("d-none");
     }
     return(
         <div className="bg-black py-3" id="nav">
@@ -30,28 +34,16 @@ export const NavBar = () =>{
                         </button>
                         <ul className="nav nav-ul" id="nav-ul">
                             <li className="nav-item ">
-                                <a href="#Sobre-mi" className="nav-link item" onClick={()=>{
-                                    document.getElementById("nav-ul").classList.toggle("d-none");
-                                    document.getElementById("nav-ul").classList.remove("show");
-                            }}>Inicio</a>
+                                <a href="#Sobre-mi" className="nav-link item" onClick={clickearCerrar}>Inicio</a>
                             </li>
                             <li className="nav-item ">
-                                <a href="#Proyectos" className="nav-link item" onClick={()=>{
-                                    document.getElementById("nav-ul").classList.toggle("d-none");
-                                    document.getElementById("nav-ul").classList.remove("show");
-                            }}>Proyectos</a>
+                                <a href="#Proyectos" className="nav-link item" onClick={clickearCerrar}>Proyectos</a>
                             </li>
                             <li className="nav-item ">
-                                <a href="#Estudios" className="nav-link item" onClick={()=>{
-                                    document.getElementById("nav-ul").classList.toggle("d-none");
-                                    document.getElementById("nav-ul").classList.remove("show");
-                            }}>Estudios</a>
+                                <a href="#Estudios" className="nav-link item" onClick={clickearCerrar}>Estudios</a>
                             </li>
                             <li className="nav-item ">
-                                <a href="#Contacto" className="nav-link item" onClick={()=>{
-                                    document.getElementById("nav-ul").classList.toggle("d-none");
-                                    document.getElementById("nav-ul").classList.remove("show");
-                            }}>Contacto</a>
+                                <a href="#Contacto" className="nav-link item" onClick={clickearCerrar}>Contacto</a>
                             </li>
                         </ul>
                         <div id="cvv">

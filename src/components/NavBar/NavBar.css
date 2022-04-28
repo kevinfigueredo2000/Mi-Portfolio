@@ -45,6 +45,11 @@
     font-size: 20px;
     cursor: pointer;
 }
+.myStyle{
+    position: relative;
+    transition: 1s all ease;
+    background-color: black;
+}
 #nav{
     z-index: 1;
     position: sticky;
