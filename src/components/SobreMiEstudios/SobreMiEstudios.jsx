@@ -5,7 +5,7 @@ import "./SobreMiEstudios.css";
 export const SobreMiEstudios = () =>{        
         return(
             <Container>
-                <Row className="mb-5"> 
+                <Row className="mb-5 cardEstudios"> 
                     {SMEstudios && SMEstudios.map( estudios =>{
                         return(
                             <div className="col-sm-6 col-12">
