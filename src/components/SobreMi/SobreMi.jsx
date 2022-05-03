@@ -1,9 +1,10 @@
 import { Container,  Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import IDYH from "../IdiomasYHobbies.json";
 import "./SobreMi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faCommentAlt, faGraduationCap, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCommentAlt, faGraduationCap, faUser } from "@fortawesome/free-solid-svg-icons";
 import StackTec from "../StackTec.json";
 import { SobreMiEstudios } from "../SobreMiEstudios/SobreMiEstudios";
 import { ProyectosPage } from "../ProyectosPage/ProyectosPage";
@@ -56,34 +57,24 @@ export const SobreMi = () =>{
             <hr/>
             <Container>
                 <Row className="my-5">
-                    <div className="col-sm-6 col-12 my-3">
-                        <div className="card shadow">
-                            <div className="row py-4 px-3"> 
-                                <div id="cardd" className="col-sm-3 col-5">
-                                    <FontAwesomeIcon icon={faCommentAlt} className="fa-comment-alt text-center my-4"/> 
-                                </div>
-                                <div className="col">
-                                    <h3>IDIOMAS</h3>
-                                    <h4>INGLES-Intermedio b2</h4>
-                                    <h4>ESPAÑOL-Nativo</h4>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>  
-                    <div className="col-sm-6 col-12 my-3">
-                        <div className="card shadow">
-                            <div className="row py-4 px-3"> 
-                                <div id="cardd" className="col-sm-3 col-5">
-                                    <FontAwesomeIcon icon={faStar} className="fas fa-star text-center my-4"/>
-                                </div>
-                                <div className="col">
-                                    <h3>HOBBIES</h3>
-                                    <h4>Musculación</h4>
-                                    <h4>Videojuegos</h4>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
+                    {IDYH && IDYH.map( item=>{
+                        return(
+                        <div className="col-sm-6 col-12 my-3">
+                            <div className="card shadow">
+                                <div className="row py-4 px-3"> 
+                                    <div id="cardd" className="col-sm-3 col-5">
+                                        <FontAwesomeIcon icon={faUser} className="fa-comment-alt text-center my-4"/> 
+                                    </div>
+                                    <div className="col">
+                                        <h3>{item.nombre}</h3>
+                                        <h4>{item.i1}</h4>
+                                        <h4>{item.i2}</h4>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>  
+                    )})}
+                    {/*<FontAwesomeIcon icon={faStar} className="fas fa-star text-center my-4"/>*/}
                 </Row>
             </Container>
             <hr/>

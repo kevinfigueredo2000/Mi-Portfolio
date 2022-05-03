@@ -35,9 +35,6 @@
 .verEmpresa{
     float: right;
 }
-.cardEstudios{
-    height: 27vh;
-}
 
 @media screen and (max-width: 767px){
     #imgFluida{

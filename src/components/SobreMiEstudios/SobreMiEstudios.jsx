@@ -5,11 +5,11 @@ import "./SobreMiEstudios.css";
 export const SobreMiEstudios = () =>{        
         return(
             <Container>
-                <Row className="mb-5 cardEstudios"> 
+                <Row className="mb-5"> 
                     {SMEstudios && SMEstudios.map( estudios =>{
                         return(
                             <div className="col-sm-6 col-12">
-                                <div className="card shadow p-4 mb-5 ">
+                                <div className="card shadow p-4 mb-5">
                                     <Row>
                                         <div className="col-sm-3 col-3">
                                             <img src={estudios.icon} alt={estudios.Empresa} className="imgFluida" id="imgFluida"/>
