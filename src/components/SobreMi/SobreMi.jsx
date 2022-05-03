@@ -4,7 +4,7 @@ import IDYH from "../IdiomasYHobbies.json";
 import "./SobreMi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faCommentAlt, faGraduationCap, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap, faUser } from "@fortawesome/free-solid-svg-icons";
 import StackTec from "../StackTec.json";
 import { SobreMiEstudios } from "../SobreMiEstudios/SobreMiEstudios";
 import { ProyectosPage } from "../ProyectosPage/ProyectosPage";
