@@ -16,5 +16,14 @@
         "trabajos": ["PROYECTO INTEGRADOR"],
         "icon": "images/coder.png",
         "link":"https://www.coderhouse.com/"
+    },
+    {
+        "id": 3,
+        "name": "Analista funcional",
+        "Empresa":"Educación IT",
+        "fecha":"Julio 2021-Septiembre 2021",
+        "trabajos": ["PROYECTO INTEGRADOR GRUPAL CON JIRA."],
+        "icon": "images/eduIT.jpg",
+        "link":"https://www.educacionit.com"
     }
 ]
