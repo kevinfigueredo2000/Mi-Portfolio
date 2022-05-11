@@ -33,9 +33,9 @@ export const Contacto = () =>{
                 </div>
                 <div className="col-12 col-sm-6">
                     <form onSubmit={sendEmail} ref={form} method="POST" action="">
-                        <input type="text" name="name" id="name" placeholder="Nombre" className="shadow form-control"/><br/>
-                        <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3"/>
-                        <textarea name="message" id="message" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control"/>
+                        <input type="text" name="name" id="name" placeholder="Nombre" className="shadow form-control" required/><br/>
+                        <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3" required/>
+                        <textarea name="message" id="message" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control" required/>
                         <div id="alertaMensaje">
                             <div className="alert alert-success" hidden={alertaMensaje} role="alert">
                                 ¡Se ha enviado el mensaje correctamente!
