@@ -1,6 +1,6 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "name": "E-Commerce",
         "description": "E-commerce, Proyecto integrador de Coder House. Realizado con React js, HTML, CSS y Bootstrap.",
         "icon":"images/E-commerce.png",
@@ -8,7 +8,7 @@
         "codigo": "https://github.com/kevinfigueredo2000/React-Ruca-CoderHouse.git"
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "Registro de notas",
         "description": "Proyecto de un registro de notas para profesores. Realizado con Js, HTML, CSS y bootstrap.",
         "icon":"images/RegistroDeNotas.png",
@@ -16,7 +16,7 @@
         "codigo": "https://github.com/kevinfigueredo2000/Registro-de-notas.git"
     },
     {
-        "id": 1,
+        "id": 3,
         "name": "ABM Clientes",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
         "icon":"images/abmclientes.png",
