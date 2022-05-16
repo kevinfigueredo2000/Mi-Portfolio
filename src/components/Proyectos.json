@@ -8,19 +8,19 @@
         "codigo": "https://github.com/kevinfigueredo2000/React-Ruca-CoderHouse.git"
     },
     {
-        "id": 1,
-        "name": "ABM Clientes",
-        "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
-        "icon":"images/abmclientes.png",
-        "link":"https://abm-ventas-kf.netlify.app/",
-        "codigo": "https://github.com/kevinfigueredo2000/ABM-Clientes"
-    },
-    {
         "id": 3,
         "name": "Registro de notas",
         "description": "Proyecto de un registro de notas para profesores. Realizado con Js, HTML, CSS y bootstrap.",
         "icon":"images/RegistroDeNotas.png",
         "link": "https://registrodenotas-kf.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/Registro-de-notas.git"
+    },
+    {
+        "id": 1,
+        "name": "ABM Clientes",
+        "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
+        "icon":"images/abmclientes.png",
+        "link":"https://abm-ventas-kf.netlify.app/",
+        "codigo": "https://github.com/kevinfigueredo2000/ABM-Clientes"
     }
 ]
