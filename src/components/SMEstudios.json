@@ -25,5 +25,29 @@
         "trabajos": ["PROYECTO INTEGRADOR GRUPAL CON JIRA."],
         "icon": "images/eduIT.jpg",
         "link":"https://www.educacionit.com"
+    },
+    {
+        "id": 4,
+        "name": "TypeScript",
+        "Empresa":"Código facilito",
+        "fecha":"Noviembre 2022",
+        "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
+        "link":"https://codigofacilito.com/"
+    },
+    {
+        "id": 5,
+        "name": "Axios",
+        "Empresa":"Código facilito",
+        "fecha":"Noviembre 2022",
+        "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
+        "link":"https://codigofacilito.com/"
+    },
+    {
+        "id": 6,
+        "name": "Redux",
+        "Empresa":"Código facilito",
+        "fecha":"Noviembre 2022",
+        "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
+        "link":"https://codigofacilito.com/"
     }
 ]

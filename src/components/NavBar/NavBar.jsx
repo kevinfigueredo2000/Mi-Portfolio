@@ -1,55 +1,50 @@
-import { Navbar } from "react-bootstrap"
-import { Container } from "react-bootstrap"
 import "./NavBar.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FaBars, FaDownload } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
+import { Container, Navbar } from "react-bootstrap";
 
-export const NavBar = () =>{
-    let ubicacionPrincipal = window.pageYOffset;
-    window.onscroll = function(){
+export const NavBar = () => {
+    const [ubicacionPrincipal, setUbicacionPrincipal] = useState(window.pageYOffset);
+    const [AbrirCerrar, setAbrirCerrar] = useState("")
+
+    window.onscroll = function () {
         let Desplazamiento_Actual = window.pageYOffset;
-        if(ubicacionPrincipal >= Desplazamiento_Actual){
-            document.getElementById('nav').classList = 'py-3 myStyle';
+        if (ubicacionPrincipal >= Desplazamiento_Actual) {
             document.getElementById('nav').style.top = '0';
-        }else{
-            document.getElementById('nav').classList = 'py-3 myStyle';
+        } else {
             document.getElementById('nav').style.top = '-100px';
         }
-        ubicacionPrincipal = Desplazamiento_Actual;
+        setUbicacionPrincipal(Desplazamiento_Actual);
     }
-    function clickearCerrar(){
-        document.getElementById("nav-ul").classList.toggle("show")
-        document.getElementById("nav-ul").classList.remove("d-none");
+    function handleClick() {
+        return AbrirCerrar === "" ? setAbrirCerrar("show") : setAbrirCerrar("")
     }
-    return(
+    return (
         <div className="bg-black py-3" id="nav">
             <Container>
-                    <Navbar>
-                        <button className="hamburger" id="hamburger" onClick={()=>{
-                                document.getElementById("nav-ul").classList.toggle("show")
-                                document.getElementById("nav-ul").classList.remove("d-none");
-                            }}>
-                            <FontAwesomeIcon className="fas fa-bars" icon={faBars}/>
-                        </button>
-                        <ul className="nav nav-ul" id="nav-ul">
-                            <li className="nav-item ">
-                                <a href="#Sobre-mi" className="nav-link item" onClick={clickearCerrar}>Inicio</a>
-                            </li>
-                            <li className="nav-item ">
-                                <a href="#Proyectos" className="nav-link item" onClick={clickearCerrar}>Proyectos</a>
-                            </li>
-                            <li className="nav-item ">
-                                <a href="#Estudios" className="nav-link item" onClick={clickearCerrar}>Estudios</a>
-                            </li>
-                            <li className="nav-item ">
-                                <a href="#Contacto" className="nav-link item" onClick={clickearCerrar}>Contacto</a>
-                            </li>
-                        </ul>
-                        <div id="cvv">
-                            <a href="kfcv.pdf" id="cv" download="kfcv.pdf">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
-                        </div>
-                    </Navbar>
+                <Navbar>
+                    <button className="hamburger" id="hamburger" onClick={handleClick}>
+                        <FaBars className="fas fa-bars" />
+                    </button>
+                    <ul className="nav nav-ul" id="nav-ul">
+                        <li className="nav-item ">
+                            <a href="#Sobre-mi" className="nav-link item" onClick={handleClick}>Inicio</a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="#Proyectos" className="nav-link item" onClick={handleClick}>Proyectos</a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="#Estudios" className="nav-link item" onClick={handleClick}>Estudios</a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="#Contacto" className="nav-link item" onClick={handleClick}>Contacto</a>
+                        </li>
+                    </ul>
+                    <div id="cvv">
+                        <a href="kfcv.pdf" id="cv" download="kfcv.pdf"> Descargar CV <FaDownload/></a>
+                    </div>
+                </Navbar>
             </Container>
         </div>
     )

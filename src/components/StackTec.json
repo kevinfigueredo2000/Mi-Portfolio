@@ -51,11 +51,26 @@
     },
     {
         "id": 11,
+        "caption": "AXIOS",
+        "icon": "https://www.tableau.com/sites/default/files/2020-10/axios-icon_0.png"
+    },
+    {
+        "id": 12,
+        "caption": "REDUX",
+        "icon": "https://ik.imagekit.io/himalayas/redux_JY2HijqK_.jpg"
+    },
+    {
+        "id": 13,
+        "caption": "TYPESCRIPT",
+        "icon": "https://essenceofchaos.github.io/images/typescript.png"
+    },
+    {
+        "id": 14,
         "caption": "PHP",
         "icon": "images/php.jpeg"
     },
     {
-        "id": 12,
+        "id": 15,
         "caption": "SQL",
         "icon": "images/mysql.jpg"
     }
