@@ -28,6 +28,8 @@
     max-width: 100%;
     height: 10vh;
     margin-left: 1vh;
+    border-radius: 50%;
+    width: 77%;
 }
 .ButtonRight{
     float: right;

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Desarrollador Web Fullstack",
-        "Empresa":"DePC Suite",
+        "empresa":"DePC Suite",
         "fecha":"Agosto 2020-Enero 2021",
         "trabajos": ["ABM CLIENTES"],
         "icon": "images/depc.png",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "React Js",
-        "Empresa":"Coder House",
+        "empresa":"Coder House",
         "fecha":"Diciembre 2021-Febrero 2022",
         "trabajos": ["PROYECTO INTEGRADOR"],
         "icon": "images/coder.png",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "Analista funcional",
-        "Empresa":"Educación IT",
+        "empresa":"Educación IT",
         "fecha":"Julio 2021-Septiembre 2021",
         "trabajos": ["PROYECTO INTEGRADOR GRUPAL CON JIRA."],
         "icon": "images/eduIT.jpg",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "name": "TypeScript",
-        "Empresa":"Código facilito",
+        "empresa":"Código facilito",
         "fecha":"Noviembre 2022",
         "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
         "link":"https://codigofacilito.com/"
@@ -37,7 +37,7 @@
     {
         "id": 5,
         "name": "Axios",
-        "Empresa":"Código facilito",
+        "empresa":"Código facilito",
         "fecha":"Noviembre 2022",
         "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
         "link":"https://codigofacilito.com/"
@@ -45,7 +45,7 @@
     {
         "id": 6,
         "name": "Redux",
-        "Empresa":"Código facilito",
+        "empresa":"Código facilito",
         "fecha":"Noviembre 2022",
         "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
         "link":"https://codigofacilito.com/"

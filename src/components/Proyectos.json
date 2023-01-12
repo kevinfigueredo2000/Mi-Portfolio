@@ -2,9 +2,9 @@
     {
         "id": 1,
         "name": "Peluquería De La Cruz",
-        "description": "E-commerce para peluqueria. Realizado con React js,FireBase , HTML, CSS y Bootstrap.",
+        "description": "E-commerce para peluqueria. Realizado con React js, Javascript, Postman, Axios, FireBase, HTML, CSS y Bootstrap.",
         "icon":"images/Delacruz.png",
-        "link": "",
+        "link": "https://delacruzpeluqueria.netlify.app/",
         "codigo": "https://github.com/Alan-Figueredo/PeluqueriaDeLaCruz"
     },
     {
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "name": "Registro de notas",
-        "description": "Proyecto de un registro de notas para profesores. Realizado con Js, HTML, CSS y bootstrap.",
+        "description": "Proyecto de un registro de notas para profesores. Realizado con Js, HTML, CSS y Bootstrap.",
         "icon":"images/RegistroDeNotas.png",
         "link": "https://registrodenotas-kf.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/Registro-de-notas.git"
