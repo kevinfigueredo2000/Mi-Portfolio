@@ -1,9 +1,11 @@
 import { Container, Row } from "react-bootstrap";
+import ProjectsJsn from "../Proyectos.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProyectosPage.css";
-import { Proyectos } from "../Proyectos/Proyectos";
+import { Proyectos } from "../ProyectosIndex/Proyectos/Proyectos";
 
-export const ProyectosPage = () =>{
+
+export const ProyectosIndex = () =>{
     return(
         <>
             <Container className="proyectos" id="Proyectos">
@@ -18,7 +20,7 @@ export const ProyectosPage = () =>{
                     </div>
                 </Row>      
                 <div className="inner">
-                    <Proyectos/>
+                    <Proyectos Projects={ProjectsJsn}/>
                 </div>    
             </Container>
         </>

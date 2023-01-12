@@ -27,7 +27,7 @@ export const NavBar = () => {
                     <button className="hamburger" id="hamburger" onClick={handleClick}>
                         <FaBars className="fas fa-bars" />
                     </button>
-                    <ul className="nav nav-ul" id="nav-ul">
+                    <ul className="nav nav-ul" id="nav-ul" style={{left:"-16px",position: "relative"}}>
                         <li className="nav-item ">
                             <a href="#Sobre-mi" className="nav-link item" onClick={handleClick}>Inicio</a>
                         </li>

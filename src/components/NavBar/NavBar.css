@@ -31,7 +31,7 @@
 .nav-ul{
     flex-direction: row;
 }
-.item{
+#nav .item{
     color: white;
 }
 .item:hover{

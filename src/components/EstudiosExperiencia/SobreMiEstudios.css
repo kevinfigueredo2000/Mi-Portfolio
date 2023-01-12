@@ -21,8 +21,9 @@
 .sobre-mi #coderCard{
     height: 26vh;
 }
-.sobre-mi .card{
+#EstudiosExperiencia .card{
     border-radius: 20px ;
+    height: 21vh;
 }
 #imgFluida{
     max-width: 100%;
@@ -35,7 +36,9 @@
     float: right;
 }
 .verEmpresa{
-    float: right;
+    bottom: 17px;
+    right: 17px;
+    position: absolute;
 }
 
 @media screen and (max-width: 767px){

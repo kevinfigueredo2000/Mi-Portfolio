@@ -4,7 +4,7 @@ import "./SobreMiEstudios.css";
 export const EstudiosExperiencia = (prop) =>{  
     const EstOTrab = prop.EstOTrab;
         return(
-            <Container>
+            <Container id="EstudiosExperiencia">
                 <Row className="mb-5"> 
                     {EstOTrab && EstOTrab.map( estudios =>{
                         return(
