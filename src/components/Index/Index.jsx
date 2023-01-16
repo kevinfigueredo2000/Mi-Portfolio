@@ -20,7 +20,7 @@ export const Index = () => {
         <Container className="sobre-mi" id="Sobre-mi">
             <Row >
                 <div className="col-sm-6">
-                    <p className="my-3" id="Hola">Hola, mi nombre es</p>
+                    <p className="mb-3" id="Hola">Hola, mi nombre es</p>
                     <h1 id="hsob">Kevin Figueredo</h1>
                     <p className="my-3">Soy Desarrollador Web Front end, un chico de 22 que busca poder costearse sus estudios, para así seguir formandome, seguir aprendiendo y lograr mejorar mis habilidades como desarrollador.</p>
                     <Row className="git-li-cv">
