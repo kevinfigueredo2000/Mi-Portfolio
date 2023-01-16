@@ -22,14 +22,14 @@ export const Proyectos = (prop) => {
     return (
         <Row>
             <div className="col">
-                <AiOutlineLeft onClick={() => handleSelect(true)} id="AiOutlineLeft" />
+                <AiOutlineLeft onClick={() => handleSelect(true)} id="AiOutlineLeft"/>
             </div>
-            <div className="col-10">
+            <div className="col-10" >
                 <Row>
                     {
                         ProjectsJsn && ProjectsJsn.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
                             return (
-                                <div className="col-sm-4">
+                                <div className="col-sm-4" style={{transition:"1s all ease"}}>
                                     <div className="card shadow mb-5">
                                         <div className="mx-3 my-3">
                                             <Row className="mb-3 mx-2">
@@ -46,10 +46,13 @@ export const Proyectos = (prop) => {
                                                     <div className="col-sm-8 col">
                                                         <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
                                                     </div>
-                                                    {projects.codigo && 
+
+                                                    {
+                                                    projects.codigo && 
                                                     <div className="col-sm-4 col">
                                                         <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
-                                                    </div>}
+                                                    </div>
+                                                    }
                                                 </Row>
                                             </Container>
                                         </div>
