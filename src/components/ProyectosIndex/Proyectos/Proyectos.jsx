@@ -46,9 +46,10 @@ export const Proyectos = (prop) => {
                                                     <div className="col-sm-8 col">
                                                         <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
                                                     </div>
+                                                    {projects.codigo && 
                                                     <div className="col-sm-4 col">
                                                         <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
-                                                    </div>
+                                                    </div>}
                                                 </Row>
                                             </Container>
                                         </div>
