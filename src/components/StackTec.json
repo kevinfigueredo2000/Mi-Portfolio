@@ -10,63 +10,68 @@
         "icon": "images/js.png"
     },
     {
-        "id": 13,
+        "id": 3,
         "caption": "TYPESCRIPT",
         "icon": "https://essenceofchaos.github.io/images/typescript.png"
     },
     {
-        "id": 14,
+        "id": 4,
         "caption": "Postman",
         "icon": "images/Postman.png"
     },
     {
-        "id": 15,
+        "id": 5,
         "caption": "Firebase",
         "icon": "images/Firebase.png"
     },
     {
-        "id": 2,
+        "id": 6,
         "caption": "Git",
         "icon": "images/git.png"
     },
     {
-        "id": 3,
+        "id": 7,
         "caption": "HTML-5",
         "icon": "images/html5.png"
     },
     {
-        "id": 6,
+        "id": 8,
         "caption": "Bootstrap",
         "icon": "images/boot.png"
     },
     {
-        "id": 10,
+        "id": 9,
         "caption": "CSS",
         "icon": "images/css.png"
     },
     {
-        "id": 11,
+        "id": 10,
         "caption": "AXIOS",
         "icon": "https://www.tableau.com/sites/default/files/2020-10/axios-icon_0.png"
     },
     {
-        "id": 5,
+        "id": 11,
         "caption": "Jquery",
         "icon" : "images/jquery.png"
     },
     {
-        "id": 7,
+        "id": 12,
         "caption": "Word",
         "icon": "images/word.png"
     },
     {
-        "id": 8,
+        "id": 13,
         "caption": "Excel",
         "icon": "images/excel.png"
     },
     {
-        "id": 9,
+        "id": 14,
         "caption": "Photoshop",
         "icon": "images/photo1.png"
+    },
+    {
+        "id": 15,
+        "caption": "Sass",
+        "icon": "https://miro.medium.com/max/1024/1*9U1toerFxB8aiFRreLxEUQ.png"
     }
 ]
