@@ -1,10 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { NavBar } from "./components/NavBar/NavBar";
-import { Contacto } from "../src/components/Contacto/Contacto";
-import { Footer } from './components/Footer/Footer';
-import { Index } from './components/Index/Index';
-import { ProyectosIndex } from './components/ProyectosIndex/ProyectosIndex';
+import { NavBar } from "./components/NavBar/NavBar.tsx";
+import { Contacto } from "./components/Contacto/Contacto.tsx";
+import { Footer } from './components/Footer/Footer.tsx';
+import { ProyectosIndex } from './components/ProyectosIndex/ProyectosIndex.jsx';
+import { Index } from './components/Index/Index.jsx';
+
 
 function App() {
   return (

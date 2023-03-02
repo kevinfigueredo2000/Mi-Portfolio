@@ -1,12 +1,12 @@
 [{
-    "id":"1",
+    "id": 1,
     "nombre":"IDIOMAS",
     "i1":"INGLES-INTERMEDIO B2",
     "i2":"ESPAÑOL-NATIVO",
     "icon":"faCommentAlt"
 },
 {
-    "id":"2",
+    "id": 2,
     "nombre":"HOBBIES",
     "i1":"MUSCULACION",
     "i2":"VIDEOJUEGOS",

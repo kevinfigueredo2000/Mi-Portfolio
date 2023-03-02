@@ -5,20 +5,20 @@ import React, { useRef, useState } from 'react';
 import emailjs from "emailjs-com"
 
 export const Contacto = () =>{
-    const [alertaMensaje, setAlertaMensaje] = useState(true);
-    const form = useRef();
+    const [alertaMensaje, setAlertaMensaje] = useState<boolean>(true);
+    const form = useRef<HTMLFormElement>(null);
 
-    function sendEmail(e){
-        e.preventDefault();
+    const sendEmail = (/* e: React.SyntheticEvent */)=> {
+        // e.preventDefault();
     
-        emailjs.sendForm('gmail', 'template_2nq5sgn', e.target, 'mv7GgMROqQAEVm9eV')
-          .then((result) => {
-              console.log(result.text);
-              setAlertaMensaje(false);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset();
+        // emailjs.sendForm('gmail', 'template_2nq5sgn', e.target.toString(), 'mv7GgMROqQAEVm9eV')
+        //   .then((result) => {
+        //       console.log(result.text);
+        //       setAlertaMensaje(false);
+        //   }, (error) => {
+        //       console.log(error.text);
+        //   });
+        //   e.target.reset();
       };
     return(
         <Container className="mt-4 contacto" id="Contacto">
@@ -35,7 +35,7 @@ export const Contacto = () =>{
                     <form onSubmit={sendEmail} ref={form} method="POST" action="">
                         <input type="text" name="name" id="name" placeholder="Nombre" className="shadow form-control" required/><br/>
                         <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control  mt-1 mb-3" required/>
-                        <textarea name="message" id="message" cols="78" rows="10" placeholder="Comentarios..." className=" shadow form-control" required/>
+                        <textarea name="message" id="message" cols={78} rows={10} placeholder="Comentarios..." className=" shadow form-control" required/>
                         <div id="alertaMensaje">
                             <div className="alert alert-success" hidden={alertaMensaje} role="alert">
                                 ¡Se ha enviado el mensaje correctamente!

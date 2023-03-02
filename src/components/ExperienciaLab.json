@@ -1,5 +1,5 @@
 [{
-    "id":"1",
+    "id": 1,
     "nombre":"Front-end web developer",
     "empresa":"De la Cruz Styling expert",
     "fecha":"EN 2022 - JUL 2022",
@@ -8,7 +8,7 @@
     "link":"https://delacruzpeluqueria.netlify.app/"
 },
 {
-    "id":"2",
+    "id": 2,
     "nombre":"Analista Funcional",
     "empresa":"Prüne",
     "fecha":"JUL 2021 - JAN 2022",

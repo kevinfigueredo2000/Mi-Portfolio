@@ -1,17 +1,22 @@
-//import ProjectsJsn from "../../Proyectos.json";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Proyectos.css";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai"
 import { useState } from "react";
+import { ProjectsJsnD } from "./ProyectosD"
 
-export const Proyectos = (prop) => {
-    const [itemCarouselNumber, setItemCarouselNumber] = useState(3)
-    const ProjectsJsn = prop.Projects
+interface Props{
+    Projects:Array<ProjectsJsnD>
+}
 
-    itemCarouselNumber === 0 && setItemCarouselNumber(Number(ProjectsJsn.length + 2));
+export const Proyectos = (prop: Props) => {
+    const [itemCarouselNumber, setItemCarouselNumber] = useState<number>(3)
+    // const ProjectsJsn = prop.Projects
 
-    const handleSelect = (prop) => {
+    itemCarouselNumber === 0 && setItemCarouselNumber(Number(prop.Projects.length + 2));
+
+    const handleSelect = (prop:boolean) => { //
         if (prop === false) {
             setItemCarouselNumber(itemCarouselNumber + 3);
         }
@@ -22,14 +27,14 @@ export const Proyectos = (prop) => {
     return (
         <Row>
             <div className="col">
-                <AiOutlineLeft onClick={() => handleSelect(true)} id="AiOutlineLeft"/>
+                <AiOutlineLeft onClick={() => handleSelect(true)} id="AiOutlineLeft" />
             </div>
             <div className="col-10" >
                 <Row>
                     {
-                        ProjectsJsn && ProjectsJsn.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
+                        prop.Projects && prop.Projects.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
                             return (
-                                <div className="col-sm-4" style={{transition:"1s all ease"}}>
+                                <div className="col-sm-4" style={{ transition: "1s all ease" }}>
                                     <div className="card shadow mb-5">
                                         <div className="mx-3 my-3">
                                             <Row className="mb-3 mx-2">
@@ -48,10 +53,10 @@ export const Proyectos = (prop) => {
                                                     </div>
 
                                                     {
-                                                    projects.codigo && 
-                                                    <div className="col-sm-4 col">
-                                                        <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
-                                                    </div>
+                                                        projects.codigo &&
+                                                        <div className="col-sm-4 col">
+                                                            <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
+                                                        </div>
                                                     }
                                                 </Row>
                                             </Container>
@@ -62,7 +67,7 @@ export const Proyectos = (prop) => {
                 </Row>
             </div>
             <div className="col">
-                <AiOutlineRight onClick={() => { handleSelect(false); itemCarouselNumber >= ProjectsJsn?.length + 2 && setItemCarouselNumber(3) }} id="AiOutlineRight" />
+                <AiOutlineRight onClick={() => { handleSelect(false); itemCarouselNumber >= (prop.Projects?.length + 2) && setItemCarouselNumber(3) }} id="AiOutlineRight" />
             </div>
         </Row>
 
