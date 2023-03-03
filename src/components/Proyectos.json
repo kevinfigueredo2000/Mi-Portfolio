@@ -16,6 +16,14 @@
     },
     {
         "id": 3,
+        "name": "Portfolio personal",
+        "description": "Portafolio personal. Realizado con React js, Typescript, HTML, CSS y Bootstrap.",
+        "icon": "images/portafolio.png",
+        "link": "https://delacruzpeluqueria.netlify.app/",
+        "codigo": "https://github.com/kevinfigueredo2000/Mi-Portfolio"
+    },
+    {
+        "id": 4,
         "name": "Registro de notas",
         "description": "Proyecto de un registro de notas para profesores. Realizado con Js, HTML, CSS y Bootstrap.",
         "icon": "images/RegistroDeNotas.png",
@@ -23,7 +31,7 @@
         "codigo": "https://github.com/kevinfigueredo2000/Registro-de-notas.git"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "ABM Clientes",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
         "icon": "images/abmclientes.png",
