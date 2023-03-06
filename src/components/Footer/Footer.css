@@ -34,6 +34,7 @@
     background-color: #E20000;
     color: black;
 }
+
 @media screen and (max-width: 767px){
     #git{
         margin-left: 145px;
@@ -44,11 +45,18 @@
     #footer{
         margin-top: 50px;
     }
-    #fa-whatsapp{
+    #footer .fa-whatsapp{
         padding: 16px 18px 18px 18px;
         border-radius: 50%;
         bottom: 51px;
         left: 77%;
         position: fixed;
     }
+    .show-wsp{
+        display: flex;
+    }
+    .hide-wsp{
+        display: none;
+    }
+
 }

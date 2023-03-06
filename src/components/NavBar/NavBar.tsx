@@ -3,26 +3,30 @@ import { FaBars, FaDownload } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useRef, useState } from "react";
 import { Container, Navbar } from "react-bootstrap";
+// import {useAltPag} from "../../context/AlturaPagina"
 
 export const NavBar = () => {
+    // const { ubicacionPrincipal, desplazamiento_Actual } = useAltPag<any[]>([]) 
+
+
     const [ubicacionPrincipal, setUbicacionPrincipal] = useState<number>(window.pageYOffset);
-    const [AbrirCerrar, setAbrirCerrar] = useState<"show" | "">("")
+    const [AbrirCerrar, setAbrirCerrar] = useState<"NavShow" | "NavHide">("NavHide")
     const Nav = useRef<HTMLDivElement>(null)
 
     window.onscroll = function () {
-        let Desplazamiento_Actual = window.pageYOffset;
-        if (ubicacionPrincipal >= Desplazamiento_Actual) {
+        let Desplazamiento_Actual = window.pageYOffset; //
+        if (ubicacionPrincipal >= /* desplazamiento_Actual */ Desplazamiento_Actual) {
             Nav.current?.classList.remove("abrir-Nav");
             Nav.current?.classList.add("cerrar-Nav");
         } else {
             Nav.current?.classList.remove("cerrar-Nav");
             Nav.current?.classList.add("abrir-Nav")
         }
-        setUbicacionPrincipal(Desplazamiento_Actual);
+        setUbicacionPrincipal(Desplazamiento_Actual); //
     }
 
     function handleClick() {
-        return AbrirCerrar === "" ? setAbrirCerrar("show") : setAbrirCerrar("")
+        AbrirCerrar === "NavHide" ? setAbrirCerrar("NavShow") : setAbrirCerrar("NavHide");
     }
     
     return (
@@ -32,7 +36,7 @@ export const NavBar = () => {
                     <button className="hamburger" id="hamburger" onClick={handleClick}>
                         <FaBars className="fas fa-bars" />
                     </button>
-                    <ul className="nav nav-ul" id="nav-ul" style={{left:"-16px",position: "relative"}}>
+                    <ul className={AbrirCerrar + " nav nav-ul"} style={{left:"-16px",position: "relative"}}>
                         <li className="nav-item ">
                             <a href="#Sobre-mi" className="nav-link item" onClick={handleClick}>Inicio</a>
                         </li>

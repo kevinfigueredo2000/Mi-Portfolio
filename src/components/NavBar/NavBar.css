@@ -1,43 +1,52 @@
-.navbar-toggle{
+.navbar-toggle {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color:blue;
-    border: 1px solid ;
+    background-color: blue;
+    border: 1px solid;
     border-radius: .25rem;
 }
-#cvv{
+
+#cvv {
     width: 72%;
 }
-.li{
+
+.li {
     color: #282828;
 }
-.li:hover{
+
+.li:hover {
     color: #282828;
 }
-#cv{
-    color:white;
+
+#cv {
+    color: white;
     background-color: #370A6D;
     text-decoration: none;
-    border-radius:12px;
+    border-radius: 12px;
     padding: 2px 12px 3px 12px;
     float: right;
 }
-#cv:hover{
+
+#cv:hover {
     background-color: #370A6D;
     color: white;
     text-decoration: none;
 }
-.nav-ul{
+
+.nav-ul {
     flex-direction: row;
 }
-#nav .item{
+
+#nav .item {
     color: white;
 }
-.item:hover{
+
+.item:hover {
     color: white;
 }
-.hamburger{
+
+.hamburger {
     background-color: transparent;
     display: none;
     border: 0;
@@ -45,45 +54,62 @@
     font-size: 20px;
     cursor: pointer;
 }
-.myStyle{
+
+.myStyle {
     position: relative;
     transition: 1s all ease;
     background-color: black;
 }
-#nav{
+
+#nav {
     z-index: 5;
     position: sticky;
     width: 100%;
     transition: 1s all ease;
 }
-@media screen and (max-width: 767px){
-    .nav-ul{
-        display: none;
+
+@media screen and (max-width: 767px) {
+    .NavShow {
+        display: flex !important;
         flex-direction: column;
     }
-    .nav-ul.show{
-        display: flex;
+    
+    .NavHide {
+        display: none !important;
     }
-    .hamburger{
+    .hamburger {
         display: block;
     }
-    #cv{
+
+    #cv {
         float: right;
     }
-    #cvv{
+
+    #cvv {
         width: 90%;
     }
-    #nav{
+
+    #nav {
         position: sticky;
         top: 0px;
         width: 100%;
         z-index: 1;
     }
+
+    .cerrar-Nav {
+        top: 0 !important;
+    }
+    
+    .abrir-Nav {
+        top: -200px !important;
+    }
 }
 
-.cerrar-Nav{
+.cerrar-Nav {
     top: 0;
 }
-.abrir-Nav{
+
+.abrir-Nav {
     top: -100px;
 }
+
