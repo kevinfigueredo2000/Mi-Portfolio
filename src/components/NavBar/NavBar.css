@@ -80,3 +80,10 @@
         z-index: 1;
     }
 }
+
+.cerrar-Nav{
+    top: 0;
+}
+.abrir-Nav{
+    top: -100px;
+}

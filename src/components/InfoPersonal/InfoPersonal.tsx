@@ -1,11 +1,16 @@
 import { Row } from "react-bootstrap"
+import React from "react"
 import { FaUser } from "react-icons/fa"
+import { IdYHobbs } from "./InfoPersonalD"
 
-export const InfoPersonal = (prop) => {
-    const IDYH = prop.IDYH
+interface Prop {
+    IDYH: Array<IdYHobbs>
+}
+
+export const InfoPersonal = (prop: Prop) => {
     return (
         <Row className="mb-5">
-            {IDYH && IDYH.map(item => {
+            {prop.IDYH && prop.IDYH.map(item => {
                 return (
                     <div className="col-sm-6 col-12 my-3">
                         <div className="card shadow">

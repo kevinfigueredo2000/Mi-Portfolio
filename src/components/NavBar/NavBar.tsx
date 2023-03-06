@@ -1,27 +1,32 @@
 import "./NavBar.css"
 import { FaBars, FaDownload } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Container, Navbar } from "react-bootstrap";
 
 export const NavBar = () => {
-    const [ubicacionPrincipal, setUbicacionPrincipal] = useState(window.pageYOffset);
-    const [AbrirCerrar, setAbrirCerrar] = useState("")
+    const [ubicacionPrincipal, setUbicacionPrincipal] = useState<number>(window.pageYOffset);
+    const [AbrirCerrar, setAbrirCerrar] = useState<"show" | "">("")
+    const Nav = useRef<HTMLDivElement>(null)
 
     window.onscroll = function () {
         let Desplazamiento_Actual = window.pageYOffset;
         if (ubicacionPrincipal >= Desplazamiento_Actual) {
-            document.getElementById('nav').style.top = '0';
+            Nav.current?.classList.remove("abrir-Nav");
+            Nav.current?.classList.add("cerrar-Nav");
         } else {
-            document.getElementById('nav').style.top = '-100px';
+            Nav.current?.classList.remove("cerrar-Nav");
+            Nav.current?.classList.add("abrir-Nav")
         }
         setUbicacionPrincipal(Desplazamiento_Actual);
     }
+
     function handleClick() {
         return AbrirCerrar === "" ? setAbrirCerrar("show") : setAbrirCerrar("")
     }
+    
     return (
-        <div className="bg-black py-3" id="nav">
+        <div className="bg-black py-3" id="nav" ref={Nav}>
             <Container>
                 <Navbar>
                     <button className="hamburger" id="hamburger" onClick={handleClick}>
