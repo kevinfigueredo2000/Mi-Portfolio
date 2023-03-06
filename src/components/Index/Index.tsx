@@ -4,14 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Index.css";
 import { FaGraduationCap, FaSuitcase, FaUser, FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { CgStack } from "react-icons/cg"
-import { ProyectosIndex } from "../ProyectosIndex/ProyectosIndex.jsx";
-import { Contacto } from "../Contacto/Contacto.tsx";
+import { ProyectosIndex } from "../ProyectosIndex/ProyectosIndex";
+import { Contacto } from "../Contacto/Contacto";
 import SMEstudios from "../SMEstudios.json";
 import ExperienciaLab from "../ExperienciaLab.json";
-import { InfoPersonal } from "../InfoPersonal/InfoPersonal.tsx";
+import { InfoPersonal } from "../InfoPersonal/InfoPersonal";
 import IDYH from "../IdiomasYHobbies.json";
-import { StackTecComponent } from "../StackTec/StackTec.tsx";
-import { EstudiosExperiencia } from "../EstudiosExperiencia/EstudiosExperiencia.tsx";
+import { StackTecComponent } from "../StackTec/StackTec";
+import { EstudiosExperiencia } from "../EstudiosExperiencia/EstudiosExperiencia";
 
 
 export const Index = () => (

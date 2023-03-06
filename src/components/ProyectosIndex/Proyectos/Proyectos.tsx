@@ -27,7 +27,7 @@ export const Proyectos = (prop: Props) => {
     return (
         <Row>
             <div className="col">
-                <AiOutlineLeft onClick={() => handleSelect(true)} id="AiOutlineLeft" />
+                <AiOutlineLeft onClick={() => {handleSelect(true); itemCarouselNumber <= (prop.Projects?.length) && setItemCarouselNumber(prop.Projects?.length + 1)}} id="AiOutlineLeft" />
             </div>
             <div className="col-10" >
                 <Row>
@@ -67,7 +67,7 @@ export const Proyectos = (prop: Props) => {
                 </Row>
             </div>
             <div className="col">
-                <AiOutlineRight onClick={() => { handleSelect(false); itemCarouselNumber >= (prop.Projects?.length + 2) && setItemCarouselNumber(3) }} id="AiOutlineRight" />
+                <AiOutlineRight onClick={() => { handleSelect(false); itemCarouselNumber >= (prop.Projects?.length) && setItemCarouselNumber(3) }} id="AiOutlineRight" />
             </div>
         </Row>
 

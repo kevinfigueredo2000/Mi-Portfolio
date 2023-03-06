@@ -1,7 +1,7 @@
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contacto.css"
-import React, { useRef, useState } from 'react';
+import React, { /* useRef, */ useState } from 'react';
 import emailjs from "emailjs-com"
 
 export const Contacto: React.FC = () => {

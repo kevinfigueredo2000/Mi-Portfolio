@@ -3,7 +3,7 @@ import React from "react";
 import ProjectsJsn from "../Proyectos.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProyectosPage.css";
-import { Proyectos } from "./Proyectos/Proyectos.tsx";
+import { Proyectos } from "./Proyectos/Proyectos";
 
 
 export const ProyectosIndex = () => (
