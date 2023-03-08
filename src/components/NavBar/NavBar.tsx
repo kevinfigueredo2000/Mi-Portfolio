@@ -36,7 +36,7 @@ export const NavBar = () => {
                     <button className="hamburger" id="hamburger" onClick={handleClick}>
                         <FaBars className="fas fa-bars" />
                     </button>
-                    <ul className={AbrirCerrar + " nav nav-ul"} style={{left:"-16px",position: "relative"}}>
+                    <ul className={AbrirCerrar + " nav nav-ul"} style={{position: "relative"}}>
                         <li className="nav-item ">
                             <a href="#Sobre-mi" className="nav-link item" onClick={handleClick}>Inicio</a>
                         </li>
