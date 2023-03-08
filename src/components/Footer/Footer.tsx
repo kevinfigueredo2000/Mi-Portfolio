@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React/* , { useRef, useState } */ from "react";
 import { Container, Row } from "react-bootstrap"
 import "./Footer.css"
 import "bootstrap/dist/css/bootstrap.min.css";
