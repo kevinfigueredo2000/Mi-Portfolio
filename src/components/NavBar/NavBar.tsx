@@ -1,5 +1,6 @@
 import "./NavBar.css"
 import { FaBars, FaDownload } from "react-icons/fa";
+import { FiX } from "react-icons/fi"
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useRef, useState } from "react";
 import { Container, Navbar } from "react-bootstrap";
@@ -28,20 +29,23 @@ export const NavBar = () => {
     function handleClick() {
         AbrirCerrar === "NavHide" ? setAbrirCerrar("NavShow") : setAbrirCerrar("NavHide");
     }
-    
+
     return (
         <div className="bg-black py-3" id="nav" ref={Nav}>
             <Container>
-                <Navbar>
+                <Navbar /* style={AbrirCerrar === "NavShow" && {alignItems:"baseline !important"}} */>
                     <button className="hamburger" id="hamburger" onClick={handleClick}>
-                        <FaBars className="fas fa-bars" />
+                        {AbrirCerrar === "NavHide" ? <FaBars className="fas fa-bars" /> : <FiX className="fas fa-bars" />}
                     </button>
-                    <ul className={AbrirCerrar + " nav nav-ul"} style={{position: "relative"}}>
+                    <ul className={AbrirCerrar + " nav nav-ul"} style={{ position: "relative" }}>
                         <li className="nav-item ">
                             <a href="#Sobre-mi" className="nav-link item" onClick={handleClick}>Inicio</a>
                         </li>
                         <li className="nav-item ">
                             <a href="#Proyectos" className="nav-link item" onClick={handleClick}>Proyectos</a>
+                        </li>
+                        <li className="nav-item ">
+                            <a href="#Experiencia-laboral" className="nav-link item" onClick={handleClick}>Experiencia</a>
                         </li>
                         <li className="nav-item ">
                             <a href="#Estudios" className="nav-link item" onClick={handleClick}>Estudios</a>
@@ -51,7 +55,7 @@ export const NavBar = () => {
                         </li>
                     </ul>
                     <div id="cvv">
-                        <a href="kfcv.pdf" id="cv" download="kfcv.pdf"> Descargar CV <FaDownload/></a>
+                        <a href="kfcv.pdf" id="cv" download="kfcv.pdf"> Descargar CV <FaDownload /></a>
                     </div>
                 </Navbar>
             </Container>

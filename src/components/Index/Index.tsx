@@ -34,7 +34,7 @@ export const Index = () => (
         <hr />
         <ProyectosIndex />
         <hr />
-        <Container id="Experiencia laboral">
+        <Container id="Experiencia-laboral">
             <Row className="ml-4 m-auto my-4">
                 <div className="col-sm-1 col-4 mb-2">
                     <FaGraduationCap className="fa-graduation-cap" />

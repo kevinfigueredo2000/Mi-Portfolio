@@ -88,6 +88,9 @@
     #cvv {
         width: 90%;
     }
+    .nav-ul{
+        padding-left: 16px !important;
+    }
 
     #nav {
         position: sticky;
@@ -101,7 +104,7 @@
     }
     
     .abrir-Nav {
-        top: -200px !important;
+        top: -300px !important;
     }
 }
 
