@@ -4,36 +4,30 @@ import { FiX } from "react-icons/fi"
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useRef, useState } from "react";
 import { Container, Navbar } from "react-bootstrap";
-// import {useAltPag} from "../../context/AlturaPagina"
+import { useAltPag } from "../../context/AlturaPagina"
 
 export const NavBar = () => {
-    // const { ubicacionPrincipal, desplazamiento_Actual } = useAltPag<any[]>([]) 
+    const { ubicacionPrincipal, desplazamiento_Actual} = useAltPag();
 
-
-    const [ubicacionPrincipal, setUbicacionPrincipal] = useState<number>(window.pageYOffset);
     const [AbrirCerrar, setAbrirCerrar] = useState<"NavShow" | "NavHide">("NavHide")
-    const Nav = useRef<HTMLDivElement>(null)
-
-    window.onscroll = function () {
-        let Desplazamiento_Actual = window.pageYOffset; //
-        if (ubicacionPrincipal >= /* desplazamiento_Actual */ Desplazamiento_Actual) {
-            Nav.current?.classList.remove("abrir-Nav");
-            Nav.current?.classList.add("cerrar-Nav");
-        } else {
-            Nav.current?.classList.remove("cerrar-Nav");
-            Nav.current?.classList.add("abrir-Nav")
-        }
-        setUbicacionPrincipal(Desplazamiento_Actual); //
-    }
+    const Nav = useRef<HTMLDivElement | null>(null)
 
     function handleClick() {
         AbrirCerrar === "NavHide" ? setAbrirCerrar("NavShow") : setAbrirCerrar("NavHide");
+    };
+
+    if (ubicacionPrincipal >= desplazamiento_Actual) {
+        Nav.current?.classList.remove("abrir-Nav");
+        Nav.current?.classList.add("cerrar-Nav");
+    } else if (desplazamiento_Actual >= ubicacionPrincipal) {
+        Nav.current?.classList.remove("cerrar-Nav");
+        Nav.current?.classList.add("abrir-Nav")
     }
 
     return (
         <div className="bg-black py-3" id="nav" ref={Nav}>
             <Container>
-                <Navbar /* style={AbrirCerrar === "NavShow" && {alignItems:"baseline !important"}} */>
+                <Navbar style={AbrirCerrar === "NavShow" ? { alignItems: "baseline" } : {}}>
                     <button className="hamburger" id="hamburger" onClick={handleClick}>
                         {AbrirCerrar === "NavHide" ? <FaBars className="fas fa-bars" /> : <FiX className="fas fa-bars" />}
                     </button>

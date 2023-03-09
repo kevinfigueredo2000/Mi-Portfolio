@@ -6,12 +6,12 @@ import { Footer } from './components/Footer/Footer';
 import { ProyectosIndex } from './components/ProyectosIndex/ProyectosIndex';
 import { Index } from './components/Index/Index';
 import React from 'react';
-// import { AlturaPaginaProvider } from "./context/AlturaPagina"
+import { AlturaPaginaProvider } from "./context/AlturaPagina"
 
 
 function App() {
   return (
-    // <AlturaPaginaProvider>
+    <AlturaPaginaProvider>
       <Router>
         <NavBar />
         <Routes>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    // </AlturaPaginaProvider>
+    </AlturaPaginaProvider>
   );
 }
 

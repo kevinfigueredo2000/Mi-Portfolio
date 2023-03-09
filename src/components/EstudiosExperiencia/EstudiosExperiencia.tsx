@@ -11,7 +11,7 @@ export const EstudiosExperiencia = (prop:Props) => {
     return (
         <Container id="EstudiosExperiencia">
             <Row className="mb-5">
-                {prop.EstOTrab && prop.EstOTrab.map(estudios => {
+                {prop?.EstOTrab.map(estudios => {
                     return (
                         <div className="col-sm-6 col-12">
                             <div className="card shadow p-4 mb-5">

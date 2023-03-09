@@ -1,30 +1,27 @@
-import React/* , { useRef, useState } */ from "react";
+import React, { useRef } from "react";
 import { Container, Row } from "react-bootstrap"
 import "./Footer.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-// import { useAltPag } from "../../context/AlturaPagina"
+import { useAltPag } from "../../context/AlturaPagina";
 
 export const Footer = () => {
-    // // const [ubicacionPrincipal, setUbicacionPrincipal] = useState<number>(window.pageYOffset);
-    // const { ubicacionPrincipal, desplazamiento_Actual } = useAltPag<any[]>([])
+    const { ubicacionPrincipal, desplazamiento_Actual, setUbicacionPrincipal, setDesplazamiento_Actual } = useAltPag()
 
+    const wsp = useRef<HTMLAnchorElement | null>(null)
 
-
-
-    // const wsp = useRef<HTMLAnchorElement>(null)
-
-    // window.onscroll = function () {
-    //     // let Desplazamiento_Actual = window.pageYOffset;
-    //     if (ubicacionPrincipal >= desplazamiento_Actual) {
-    //         wsp.current?.classList.remove("hide-wsp");
-    //         wsp.current?.classList.add("show-wsp")
-    //     } else {
-    //         wsp.current?.classList.remove("show-wsp");
-    //         wsp.current?.classList.add("hide-wsp");
-    //     }
-    //     // setUbicacionPrincipal(Desplazamiento_Actual);
-    // }
+    window.onscroll = function () {
+        setDesplazamiento_Actual(window.pageYOffset)
+        if (ubicacionPrincipal >= desplazamiento_Actual) {
+            wsp.current?.classList.remove("hide-wsp");
+            wsp.current?.classList.add("show-wsp");
+        } else if (desplazamiento_Actual >= ubicacionPrincipal){
+            wsp.current?.classList.remove("show-wsp");
+            wsp.current?.classList.add("hide-wsp");
+        }
+        setUbicacionPrincipal(desplazamiento_Actual); 
+    }
+    
     return (
         <Container id="footer" className="mb-4 f-resp">
             <Row>
@@ -39,7 +36,7 @@ export const Footer = () => {
                 </div>
             </Row>
             <Row>
-                <a href="https://wa.link/i2wfg9" target="_blank" rel="noreferrer" /* ref={wsp} */><FaWhatsapp className="fa-whatsapp" id="fa-whatsapp" /></a>
+                <a href="https://wa.link/i2wfg9" target="_blank" rel="noreferrer" ref={wsp}><FaWhatsapp className="fa-whatsapp" id="fa-whatsapp" /></a>
             </Row>
         </Container>
     )
