@@ -1,23 +1,32 @@
-.avatar{
-    height: 40vh;
-    width: 42vh;
+.divAvatar{
+    position: relative !important;
+    bottom: 66px !important;
+}
+.avatar {
+    height: 34vh;
+    width: 34vh;
     border-radius: 50%;
     margin-top: 0%;
     padding: 10px;
 }
-.card{
-    border-radius: 20px ;
+
+.card {
+    border-radius: 20px;
 }
-.tec{
+
+.tec {
     font-size: 17px;
 }
-.fa-comment-alt{
+
+.fa-comment-alt {
     font-size: 50px;
 }
-.fa-star{
+
+.fa-star {
     font-size: 50px;
 }
-.fa-linkedin-in{
+
+.fa-linkedin-in {
     font-size: 35px;
     color: white;
     border-radius: 21px;
@@ -25,34 +34,42 @@
     background-color: #370A6D;
     margin-top: 1px;
 }
-.fa-github{
+
+.fa-github {
     color: #370A6D;
     font-size: 35px;
     margin-top: 1px;
 }
-.cv2{
+
+.cv2 {
     color: white;
     background-color: #370A6D;
     border-radius: 25px;
     padding: 8px 27px 8px 27px;
     margin-left: 10px;
 }
-.cv2:hover{
+
+.cv2:hover {
     color: white;
 }
-.fa-star{
+
+.fa-star {
     color: white;
 }
-.fa-comment-alt{
+
+.fa-comment-alt {
     color: white;
 }
-.fa-graduation-cap{
+
+.fa-graduation-cap {
     color: black;
 }
-.fa-briefcase{
+
+.fa-briefcase {
     color: #370A6D;
 }
-#cardd{
+
+#cardd {
     background-color: #370A6D;
     border-radius: 25px;
     text-align: center;
@@ -61,28 +78,35 @@
     margin-right: 5px;
     margin-left: -4px;
 }
-#tecolor{
+
+#tecolor {
     background-color: #370A6D;
 }
-h4{
+
+h4 {
     font-size: 12px;
 }
-h3{
-    font-size:18px;
+
+h3 {
+    font-size: 18px;
 }
-h2{
+
+h2 {
     font-size: 24px;
 }
-h1{
+
+h1 {
     font-size: 35px;
 }
-.imgscards{
+
+.imgscards {
     border-radius: 20px 20px 0px 0px;
     max-width: 100%;
     height: 19vh;
     padding: 5px;
 }
-.fa-whatsapp{ 
+
+.fa-whatsapp {
     font-size: 32px;
     color: white;
     padding: 14px 22px 41px 22px;
@@ -92,32 +116,41 @@ h1{
     left: 90%;
     position: fixed;
 }
-.fa-graduation-cap{
+
+.fa-graduation-cap {
     font-size: 56px;
 }
-.git-li-cv{
+
+.git-li-cv {
     margin-top: 10vh;
 }
-   #Hola{ color: purple;
+
+#Hola {
+    color: purple;
     font-size: 18px;
     font-weight: 600;
 }
-#Sobre-mi{
+
+#Sobre-mi {
     margin-top: 55px;
     margin-bottom: 55px;
     scroll-behavior: smooth;
 }
-#Estudios{
+
+#Estudios {
     scroll-behavior: smooth;
 }
-@media screen and (max-width: 767px){
-    .sobre-mi{
+
+@media screen and (max-width: 767px) {
+    .sobre-mi {
         margin-bottom: -64px;
     }
-    #Sobre-mi{
+
+    #Sobre-mi {
         margin-top: 0vh;
     }
-    .sobre-mi .avatar{
+
+    .sobre-mi .avatar {
         height: 43vh;
         width: 43vh;
         margin-bottom: -6%;

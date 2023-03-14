@@ -23,11 +23,11 @@ export const Index = () => (
                 <p className="my-3">Un chico de 23 años, desarrollador Web Front end. Me apasionan los desafios, ya que me permiten desarrollar mis habilidades y competencias.</p>
                 <Row className="git-li-cv">
                     <a className="col-sm-1 col-2" href="https://github.com/kevinfigueredo2000" target="_blank" rel="noreferrer"><FaGithub className="fa-github" /></a>
-                    <a className="col-sm-4 col-3" href="https://www.linkedin.com/in/kevin-figueredo-1512221a3/" target="_blank" rel="noreferrer"><FaLinkedinIn className="fa-linkedin-in"/></a>
+                    <a className="col-sm-4 col-3" href="https://www.linkedin.com/in/kevin-figueredo-1512221a3/" target="_blank" rel="noreferrer"><FaLinkedinIn className="fa-linkedin-in" /></a>
                     <a className="col-sm-4 col-6 nav-link cv2 text-center " href="kfcv.pdf" download="Kfcv.pdf" target="_blank" rel="noreferrer" >Descargar CV</a>
                 </Row>
             </div>
-            <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
+            <div className="col-12 mt-5 mb-4 col-sm-6 text-center divAvatar">
                 <img className="img-fluid avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo" />
             </div>
         </Row>
