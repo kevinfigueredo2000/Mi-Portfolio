@@ -36,6 +36,7 @@
 
 #AiOutlineRight{
     font-size: 30px;
+    float: right;
     margin-top: 258%;
 }
 #AiOutlineRight:hover{
