@@ -15,7 +15,7 @@ export const ProyectosIndex = () => (
         </Row>
         <Row>
             <div className="col-sm-6 mb-4">
-                <p id="p1">Estos son los proyectos que aprendí y estoy capacitado a realizar.</p>
+                <p id="p1">Estos son mis trabajos hasta el día de hoy.</p>
             </div>
         </Row>
         <section className="inner">
