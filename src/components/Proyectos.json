@@ -8,7 +8,7 @@
     },
     {
         "id": 2,
-        "name": "E-Commerce",
+        "name": "Ruca E-Commerce",
         "description": "E-commerce, Proyecto integrador de Coder House. Realizado con React js, FireBase, HTML, CSS y Bootstrap.",
         "icon": "images/E-commerce.png",
         "link": "https://ruca-e-commerce.netlify.app/",
@@ -19,7 +19,7 @@
         "name": "Portfolio personal",
         "description": "Portafolio personal. Realizado con React js, Typescript, HTML, CSS y Bootstrap.",
         "icon": "images/portafolio.png",
-        "link": "https://delacruzpeluqueria.netlify.app/",
+        "link": "#",
         "codigo": "https://github.com/kevinfigueredo2000/Mi-Portfolio"
     },
     {
