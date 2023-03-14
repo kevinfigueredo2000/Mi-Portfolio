@@ -37,6 +37,9 @@
     padding: 8px 27px 8px 27px;
     margin-left: 10px;
 }
+.cv2:hover{
+    color: white;
+}
 .fa-star{
     color: white;
 }

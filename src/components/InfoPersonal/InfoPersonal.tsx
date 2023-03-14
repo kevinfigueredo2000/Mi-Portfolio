@@ -12,7 +12,7 @@ export const InfoPersonal = (prop: Prop) => {
         <Row className="mb-5">
             {prop.IDYH && prop.IDYH.map(item => {
                 return (
-                    <div className="col-sm-6 col-12 my-3">
+                    <article className="col-sm-6 col-12 my-3">
                         <div className="card shadow">
                             <div className="row py-4 px-3">
                                 <div id="cardd" className="col-sm-3 col-5">
@@ -25,7 +25,7 @@ export const InfoPersonal = (prop: Prop) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 )
             })}
         </Row>

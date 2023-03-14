@@ -31,7 +31,7 @@ export const NavBar = () => {
                     <button className="hamburger" id="hamburger" onClick={handleClick}>
                         {AbrirCerrar === "NavHide" ? <FaBars className="fas fa-bars" /> : <FiX className="fas fa-bars" />}
                     </button>
-                    <ul className={AbrirCerrar + " nav nav-ul"} style={{ position: "relative" }}>
+                    <ul className={AbrirCerrar + " nav nav-ul"} style={{ position: "relative", left:"-17px" }}>
                         <li className="nav-item ">
                             <a href="#Sobre-mi" className="nav-link item" onClick={handleClick}>Inicio</a>
                         </li>

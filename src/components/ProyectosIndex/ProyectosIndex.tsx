@@ -18,8 +18,8 @@ export const ProyectosIndex = () => (
                 <p id="p1">Estos son los proyectos que aprendí y estoy capacitado a realizar.</p>
             </div>
         </Row>
-        <div className="inner">
+        <section className="inner">
             <Proyectos Projects={ProjectsJsn} />
-        </div>
+        </section>
     </Container>
 )

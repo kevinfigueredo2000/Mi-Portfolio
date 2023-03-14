@@ -30,7 +30,7 @@ export const Proyectos = (prop: Props) => {
                 {
                     prop.Projects && prop.Projects.map(projects => {
                         return (
-                            <div className="col-sm-4" style={{ transition: "1s all ease" }}>
+                            <article className="col-sm-4" style={{ transition: "1s all ease" }}>
                                 <div className="card shadow mb-5">
                                     <div className="mx-3 my-3">
                                         <Row className="mb-3 mx-2">
@@ -58,7 +58,7 @@ export const Proyectos = (prop: Props) => {
                                         </Container>
                                     </div>
                                 </div>
-                            </div>)
+                            </article>)
                     })}
             </Row>
         )
