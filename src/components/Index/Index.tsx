@@ -27,7 +27,7 @@ export const Index = () => (
                     <a className="col-sm-4 col-6 nav-link cv2 text-center " href="kfcv.pdf" download="Kfcv.pdf" target="_blank" rel="noreferrer" >Descargar CV</a>
                 </Row>
             </div>
-            <div className="col-12 mt-5 mb-4 col-sm-6 text-center divAvatar">
+            <div className="col-12 mt-sm-5 mt-3 mb-5 mb-sm-4 col-sm-6 text-center divAvatar">
                 <img className="img-fluid avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo" />
             </div>
         </Row>
