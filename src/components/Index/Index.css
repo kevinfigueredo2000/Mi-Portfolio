@@ -149,9 +149,13 @@ h1 {
     #Sobre-mi {
         margin-top: 0vh;
     }
+    .divAvatar{
+    position: initial !important;
+    bottom: 0px !important;
+    }
 
     .sobre-mi .avatar {
-        height: 43vh;
+        height: 37vh;
         width: 43vh;
         margin-bottom: -6%;
     }
