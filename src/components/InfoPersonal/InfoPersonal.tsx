@@ -1,6 +1,7 @@
 import { Row } from "react-bootstrap"
 import React from "react"
-import { FaUser } from "react-icons/fa"
+import { MdLocalActivity } from "react-icons/md"
+import { HiLanguage } from "react-icons/hi2"
 import { IdYHobbs } from "./InfoPersonalD"
 
 interface Prop {
@@ -16,7 +17,7 @@ export const InfoPersonal = (prop: Prop) => {
                         <div className="card shadow">
                             <div className="row py-4 px-3">
                                 <div id="cardd" className="col-sm-3 col-5">
-                                    <FaUser className="fa-comment-alt text-center my-4" />
+                                    {item.nombre === "IDIOMAS" ? <HiLanguage className="fa-comment-alt text-center my-4" /> : <MdLocalActivity className="fa-comment-alt text-center my-4" />}
                                 </div>
                                 <div className="col">
                                     <h3>{item.nombre}</h3>

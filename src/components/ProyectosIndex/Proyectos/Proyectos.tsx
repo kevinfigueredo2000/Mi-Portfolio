@@ -24,6 +24,42 @@ export const Proyectos = (prop: Props) => {
             setItemCarouselNumber(itemCarouselNumber - 3);
         }
     };
+
+    function retProyectsSlided(){
+        return(prop.Projects && prop.Projects.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
+            return (
+                <div className="col-sm-4" >
+                    <div className="card shadow mb-5">
+                        <div className="mx-3 my-3">
+                            <Row className="mb-3 mx-2">
+                                <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="imgFluida shadow" alt={projects.name} /></a>
+                            </Row>
+                            <Row className="sv">
+                                <h2 className="my-2 text-center nombres-pr">{projects.name}</h2>
+                            </Row>
+                            <Row className="mx-1 my-3 desc">
+                                <p>{projects.description}</p>
+                            </Row>
+                            <Container>
+                                <Row className="my-xxl-2 mt-sm-2" id="Row-VOnline-CFuente">
+                                    <div className="col-sm col">
+                                        <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
+                                    </div>
+
+                                    {
+                                        projects.codigo &&
+                                        <div className="col-sm-4 col">
+                                            <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
+                                        </div>
+                                    }
+                                </Row>
+                            </Container>
+                        </div>
+                    </div>
+                </div>)
+        }))
+    }
+
     if (window.screen.width <= 800) {
         return (
             <Row>
@@ -70,39 +106,7 @@ export const Proyectos = (prop: Props) => {
                 </div>
                 <div className="col-10" >
                     <Row>
-                        {
-                            prop.Projects && prop.Projects.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
-                                return (
-                                    <div className="col-sm-4" style={{ transition: "1s all ease" }}>
-                                        <div className="card shadow mb-5">
-                                            <div className="mx-3 my-3">
-                                                <Row className="mb-3 mx-2">
-                                                    <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="imgFluida shadow" alt={projects.name} /></a>
-                                                </Row>
-                                                <Row className="sv">
-                                                    <h2 className="my-2 text-center nombres-pr">{projects.name}</h2>
-                                                </Row>
-                                                <Row className="mx-1 my-3 desc">
-                                                    <p>{projects.description}</p>
-                                                </Row>
-                                                <Container>
-                                                    <Row className="mb-5" id="Row-VOnline-CFuente">
-                                                        <div className="col-sm-8 col">
-                                                            <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
-                                                        </div>
-
-                                                        {
-                                                            projects.codigo &&
-                                                            <div className="col-sm-4 col">
-                                                                <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
-                                                            </div>
-                                                        }
-                                                    </Row>
-                                                </Container>
-                                            </div>
-                                        </div>
-                                    </div>)
-                            })}
+                       {retProyectsSlided()}
                     </Row>
                 </div>
                 <div className="col">

@@ -1,6 +1,3 @@
-.desc{
-    height: 10vh;
-}
 #btn_ver{
     background-color: #370A6D;
     color: white;
@@ -48,6 +45,10 @@
 }
 #AiOutlineLeft:hover{
     cursor: pointer;
+}
+#Row-VOnline-CFuente{
+    bottom: 3%;
+    position: absolute;
 }
 
 @media screen and (max-width: 767px){

@@ -3,7 +3,8 @@
 }
 .proyectos .card{
     border-radius: 18px;
-    height: 470px;
+    min-height: 100%;
+    height: auto;
 }
 .fa-whatsapp{ 
     font-size: 32px;

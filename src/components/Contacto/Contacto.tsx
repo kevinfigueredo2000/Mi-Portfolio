@@ -1,13 +1,13 @@
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contacto.css"
-import React, { /* useRef, */ useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from "emailjs-com"
+import { MdContactPhone } from "react-icons/md"
 
 export const Contacto: React.FC = () => {
     const [alertaMensajeEnviado, setAlertaMensajeEnviado] = useState<boolean>(true);
     const [alertaMensajeError, setAlertaMensajeError] = useState<boolean>(true);
-    // const form = useRef<HTMLFormControlsCollection>(null);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -31,8 +31,11 @@ export const Contacto: React.FC = () => {
     };
     return (
         <Container className="mt-4 contacto" id="Contacto">
-            <Row>
-                <div className="col mb-2">
+            <Row className="ml-4 m-auto mb-3">
+                <div className="col-sm-1 col-4 mb-2">
+                    <MdContactPhone className="fa-graduation-cap" />
+                </div>
+                <div className="col-sm col-4 mb-2 my-auto">
                     <h2>Contacto</h2>
                 </div>
             </Row>
