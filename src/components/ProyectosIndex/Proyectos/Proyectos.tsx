@@ -28,7 +28,7 @@ export const Proyectos = (prop: Props) => {
     function retProyectsSlided(){
         return(prop.Projects && prop.Projects.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
             return (
-                <div className="col-sm-4" >
+                <div className="col-sm-4">
                     <div className="card shadow mb-5">
                         <div className="mx-3 my-3">
                             <Row className="mb-3 mx-2">
@@ -66,8 +66,8 @@ export const Proyectos = (prop: Props) => {
                 {
                     prop.Projects && prop.Projects.map(projects => {
                         return (
-                            <article className="col-sm-4" style={{ transition: "1s all ease" }}>
-                                <div className="card shadow mb-5">
+                            <article className="col-sm-4 mt-3" style={{ transition: "1s all ease", height:"auto", minHeight:"unset" }}>
+                                <div className="card shadow">
                                     <div className="mx-3 my-3">
                                         <Row className="mb-3 mx-2">
                                             <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="imgFluida shadow" alt={projects.name} /></a>
@@ -79,7 +79,7 @@ export const Proyectos = (prop: Props) => {
                                             <p>{projects.description}</p>
                                         </Row>
                                         <Container>
-                                            <Row className="mb-5" id="Row-VOnline-CFuente">
+                                            <Row className="mb-5">
                                                 <div className="col-sm-8 col">
                                                     <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
                                                 </div>
