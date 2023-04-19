@@ -12,11 +12,18 @@ interface Props {
 
 export const Proyectos = (prop: Props) => {
     const [itemCarouselNumber, setItemCarouselNumber] = useState<number>(3)
-    const numeroProyectos = prop?.Projects.length
+    const prueba = prop?.Projects.length
 
-    itemCarouselNumber === 0 && Number((numeroProyectos / 3).toFixed(2).slice(-2)) === 33 && setItemCarouselNumber((numeroProyectos + 2))
-    itemCarouselNumber === 0 && (Number((numeroProyectos / 3).toFixed(2).slice(-2)) === 66) && setItemCarouselNumber((numeroProyectos + 1));
-    itemCarouselNumber === 0 && setItemCarouselNumber(numeroProyectos)
+    function prueba1() {
+        if (Number((prueba / 3).toFixed(2).slice(-2, -1)) === 3) {
+            return setItemCarouselNumber((prueba + 2))
+        } else if ((Number((prueba / 3).toFixed(2).slice(-2, -1)) === 6)) {
+            return setItemCarouselNumber((prueba + 1));
+        } else {
+            return setItemCarouselNumber(prueba)
+        }
+    }
+    itemCarouselNumber <= 0  && prueba1()
 
     const handleSelect = (prop: boolean) => { //
         if (prop === false) {
