@@ -12,21 +12,24 @@ interface Props {
 
 export const Proyectos = (prop: Props) => {
     const [itemCarouselNumber, setItemCarouselNumber] = useState<number>(3)
-    // const ProjectsJsn = prop.Projects
+    const numeroProyectos = prop?.Projects.length
 
-    itemCarouselNumber === 0 && setItemCarouselNumber(Number(prop.Projects.length + 2));
+    itemCarouselNumber === 0 && Number((numeroProyectos / 3).toFixed(2).slice(-2)) === 33 && setItemCarouselNumber((numeroProyectos + 2))
+    itemCarouselNumber === 0 && (Number((numeroProyectos / 3).toFixed(2).slice(-2)) === 66) && setItemCarouselNumber((numeroProyectos + 1));
+    itemCarouselNumber === 0 && setItemCarouselNumber(numeroProyectos)
 
     const handleSelect = (prop: boolean) => { //
         if (prop === false) {
             setItemCarouselNumber(itemCarouselNumber + 3);
         }
         if (prop === true) {
-            setItemCarouselNumber(itemCarouselNumber - 3);
+
+            return setItemCarouselNumber(itemCarouselNumber - 3)
         }
     };
 
-    function retProyectsSlided(){
-        return(prop.Projects && prop.Projects.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
+    function retProyectsSlided() {
+        return (prop.Projects && prop.Projects.slice(itemCarouselNumber - 3, itemCarouselNumber).map(projects => {
             return (
                 <div className="col-sm-4">
                     <div className="card shadow mb-5">
@@ -38,10 +41,10 @@ export const Proyectos = (prop: Props) => {
                                 <h2 className="my-2 text-center nombres-pr">{projects.name}</h2>
                             </Row>
                             <Row className="mx-1 my-3 desc">
-                                <p>{projects.description}</p>
+                                <p style={{ height: "5rem", overflow: "auto" }}>{projects.description}</p>
                             </Row>
-                            <Container>
-                                <Row className="my-xxl-2 mt-sm-2" id="Row-VOnline-CFuente">
+                            <Container style={{ position: "relative", top: "1rem" }}>
+                                <Row>
                                     <div className="col-sm col">
                                         <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
                                     </div>
@@ -66,7 +69,7 @@ export const Proyectos = (prop: Props) => {
                 {
                     prop.Projects && prop.Projects.map(projects => {
                         return (
-                            <article className="col-sm-4 mt-3" style={{ transition: "1s all ease", height:"auto", minHeight:"unset" }}>
+                            <article className="col-sm-4 mt-3" style={{ transition: "1s all ease", height: "auto", minHeight: "unset" }}>
                                 <div className="card shadow">
                                     <div className="mx-3 my-3">
                                         <Row className="mb-3 mx-2">
@@ -102,11 +105,11 @@ export const Proyectos = (prop: Props) => {
         return (
             <Row>
                 <div className="col">
-                    <AiOutlineLeft onClick={() => { handleSelect(true); itemCarouselNumber <= (prop.Projects?.length) && setItemCarouselNumber(prop.Projects?.length + 1) }} id="AiOutlineLeft" />
+                    <AiOutlineLeft onClick={() => { handleSelect(true); }} id="AiOutlineLeft" />
                 </div>
                 <div className="col-10" >
                     <Row>
-                       {retProyectsSlided()}
+                        {retProyectsSlided()}
                     </Row>
                 </div>
                 <div className="col">

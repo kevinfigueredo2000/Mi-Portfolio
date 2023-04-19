@@ -28,6 +28,7 @@
 #EstudiosExperiencia .card {
     border-radius: 20px;
     height: auto;
+    min-height: 171px;
 }
 
 #imgFluida {

@@ -16,7 +16,7 @@ import { EstudiosExperiencia } from "../EstudiosExperiencia/EstudiosExperiencia"
 
 export const Index = () => (
     <Container className="sobre-mi" id="Sobre-mi">
-        <Row >
+        <Row className="mt-xxl-5">
             <div className="col-sm-7 mt-sm-5">
                 <p className="mb-3" id="Hola">Hola, mi nombre es</p>
                 <h1 id="hsob">Kevin Figueredo</h1>
