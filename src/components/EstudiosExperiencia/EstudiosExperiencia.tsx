@@ -19,7 +19,7 @@ export const EstudiosExperiencia = (prop:Props) => {
                                     <div className="col-sm-3 col-3">
                                         <img src={estudios.icon} alt={estudios.empresa} className="imgFluida" id="imgFluida" />
                                     </div>
-                                    <div className="col">
+                                    <div className="col" id="altura-contenido-cards">
                                         <h3>{estudios.nombre}</h3>
                                         <h3>{estudios.empresa}</h3>
                                         <h4>{estudios.fecha}</h4>
@@ -34,7 +34,7 @@ export const EstudiosExperiencia = (prop:Props) => {
                                         </div>
                                     </div>
                                 </Row>
-                                <div className="col-sm-12 col-12">
+                                <div className="col-xxl-12 col-xl-12 col-sm-12 col-12">
                                     <a className="verEmpresa" target="_blank" id="verEmpresa" href={estudios.link} rel="noreferrer">VER EMPRESA</a>
                                 </div>
                             </div>

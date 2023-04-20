@@ -6,10 +6,13 @@
     border: 1px solid;
     border-radius: .25rem;
 }
+.navbar{
+    position: unset !important;
+}
 
 #cvv {
-    right: -66%;
-    position: relative;
+    right: 7%;
+    position: absolute;
 
 }
 
@@ -69,13 +72,7 @@
     width: 100%;
     transition: 1s all ease;
 }
-@media screen and (max-width: 1375px) {
-    #cvv {
-        right: -49%;
-        position: relative;
-    
-    }
-}
+
 @media screen and (max-width: 767px) {
     .NavShow {
         display: flex !important;

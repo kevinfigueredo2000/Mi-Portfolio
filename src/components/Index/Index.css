@@ -6,7 +6,7 @@
     padding: 10px;
 }
 
-.card {
+.card{
     border-radius: 20px;
 }
 
@@ -69,7 +69,7 @@
     background-color: #370A6D;
     border-radius: 25px;
     text-align: center;
-    padding: 20px;
+    padding: 5%;
     margin: -24px;
     margin-right: 5px;
     margin-left: -4px;

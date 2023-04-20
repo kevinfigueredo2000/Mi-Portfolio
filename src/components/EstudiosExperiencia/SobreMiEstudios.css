@@ -9,6 +9,8 @@
     border-radius: 25px;
     padding: 6px 16px 6px 16px;
     font-size: 13px;
+    float: right;
+    position: relative;
 }
 
 .verEmpresa:hover {
@@ -32,21 +34,25 @@
 }
 
 #imgFluida {
-    max-width: 100%;
-    height: 10vh;
-    margin-left: 1vh;
+    height: 80px;
+    margin-left: 15%;
     border-radius: 50%;
-    width: 77%;
+    width: 80px;
 }
 
 .ButtonRight {
     float: right;
 }
-
-.verEmpresa {
-    bottom: 17px;
-    right: 17px;
-    position: absolute;
+@media screen and (max-width: 992px) {
+    #imgFluida {
+        height: 50px;
+        width: 50px;
+    }
+    #altura-contenido-cards{
+        max-height: 194px;
+        min-height: 143px;
+        overflow: auto;
+    }
 }
 
 @media screen and (max-width: 767px) {

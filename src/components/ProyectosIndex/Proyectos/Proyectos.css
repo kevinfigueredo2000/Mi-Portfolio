@@ -33,15 +33,17 @@
 
 #AiOutlineRight{
     font-size: 30px;
+    position: relative;
     float: right;
-    margin-top: 258%;
+    top: 50%;
 }
 #AiOutlineRight:hover{
     cursor: pointer;
 }
 #AiOutlineLeft{
     font-size: 30px;
-    margin-top: 258%;
+    position: relative;
+    top: 50%;
 }
 #AiOutlineLeft:hover{
     cursor: pointer;
