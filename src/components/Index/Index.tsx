@@ -22,8 +22,8 @@ export const Index = () => (
                 <h1 id="hsob">Kevin Figueredo</h1>
                 <p className="my-3">Un chico de 23 años, desarrollador Web Front end. Me apasionan los desafios, ya que me permiten desarrollar mis habilidades y competencias.</p>
                 <Row>
-                    <a className="col-sm-1 col-2" href="https://github.com/kevinfigueredo2000" target="_blank" rel="noreferrer"><FaGithub className="fa-github" /></a>
-                    <a className="col-sm-1 col-3" href="https://www.linkedin.com/in/kevin-figueredo-1512221a3/" target="_blank" rel="noreferrer"><FaLinkedinIn className="fa-linkedin-in" /></a>
+                    <a className="col-xxl-1 col-xl-1 col-sm-2 col-2" href="https://github.com/kevinfigueredo2000" target="_blank" rel="noreferrer"><FaGithub className="fa-github" /></a>
+                    <a className="col-xxl-1 col-xl-1 col-sm-1 col-3" href="https://www.linkedin.com/in/kevin-figueredo-1512221a3/" target="_blank" rel="noreferrer"><FaLinkedinIn className="fa-linkedin-in" /></a>
                 </Row>
             </div>
             <div className="col-12 mt-5 mt-sm-0 mb-4 col-sm-5 text-center">

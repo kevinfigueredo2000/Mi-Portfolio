@@ -7,7 +7,7 @@ export const StackTecComponent = () => (
         {
             StackTec && StackTec.map(stack => {
                 return (
-                    <div className="col-6 col-sm-2 mb-3">
+                    <div className="col-6 col-sm-3 col-xxl-2 col-xl-2 mb-3">
                         <div className="card shadow">
                             <img src={stack.icon} className="imgscards" key={stack.caption} alt={stack.caption} /> <br />
                             <h3 className="text-center tec">{stack.caption}</h3>

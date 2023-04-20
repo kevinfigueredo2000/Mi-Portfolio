@@ -32,7 +32,7 @@ export const Proyectos = (prop: Props) => {
             <div className="col-sm-4">
                 <div className="card shadow mb-5">
                     <div className="mx-3 my-3">
-                        <Row className="mb-3 mx-2">
+                        <Row className="mb-3 mx-xxl-2">
                             <a href={projects.link} target="_blank" rel="noreferrer"><img src={projects.icon} className="imgFluida shadow" alt={projects.name} /></a>
                         </Row>
                         <Row className="sv">
@@ -43,13 +43,13 @@ export const Proyectos = (prop: Props) => {
                         </Row>
                         <Container style={{ position: "relative", top: "1rem" }}>
                             <Row>
-                                <div className="col-xxl-7 col-sm col-xl-8">
+                                <div className="col-xxl-7 col-sm-12 col-xl-8">
                                     <a href={projects.link} target="_blank" type="button" id="btn_ver" rel="noreferrer">VER ONLINE</a>
                                 </div>
 
                                 {
                                     projects.codigo &&
-                                    <div className="col-xxl col-sm col-xl mt-sm-1 ms-sm-3 mt-xxl-0 ms-xxl-0 mt-xl-0 ms-xl-0">
+                                    <div className="col-xxl col-sm-12 col-xl mt-sm-1 ms-sm-3 mt-xxl-0 ms-xxl-0 mt-xl-0 ms-xl-0">
                                         <a href={projects.codigo} target="_blank" className="cf" rel="noreferrer">Código fuente</a>
                                     </div>
                                 }
