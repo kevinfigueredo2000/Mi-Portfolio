@@ -5,7 +5,7 @@
         "empresa":"DePC Suite",
         "fecha":"Agosto 2020-Enero 2021",
         "trabajos": ["ABM CLIENTES"],
-        "icon": "images/depc.png",
+        "icon": "images/depc.webp",
         "link":"https://depcsuite.com/?v=d72a48a8ebd2"
     },
     {
@@ -14,7 +14,7 @@
         "empresa":"Coder House",
         "fecha":"Diciembre 2021-Febrero 2022",
         "trabajos": ["PROYECTO INTEGRADOR"],
-        "icon": "images/coder.png",
+        "icon": "images/coder.webp",
         "link":"https://www.coderhouse.com/"
     },
     {
@@ -23,7 +23,7 @@
         "empresa":"Educación IT",
         "fecha":"Julio 2021-Septiembre 2021",
         "trabajos": ["PROYECTO INTEGRADOR GRUPAL CON JIRA."],
-        "icon": "images/eduIT.jpg",
+        "icon": "images/eduIT.webp",
         "link":"https://www.educacionit.com"
     },
     {
@@ -31,7 +31,7 @@
         "nombre": "TypeScript",
         "empresa":"Código facilito",
         "fecha":"Noviembre 2022",
-        "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
+        "icon": "images/codigofacilito.webp",
         "link":"https://codigofacilito.com/"
     },
     {
@@ -39,7 +39,7 @@
         "nombre": "Axios",
         "empresa":"Código facilito",
         "fecha":"Noviembre 2022",
-        "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
+        "icon": "images/codigofacilito.webp",
         "link":"https://codigofacilito.com/"
     },
     {
@@ -47,7 +47,7 @@
         "nombre": "Redux",
         "empresa":"Código facilito",
         "fecha":"Noviembre 2022",
-        "icon": "https://www.bing.com/th?id=AMMS_d36bd043e3cbdcbfaa1208ac406ef1b5&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=16.1",
+        "icon": "images/codigofacilito.webp",
         "link":"https://codigofacilito.com/"
     }
 ]

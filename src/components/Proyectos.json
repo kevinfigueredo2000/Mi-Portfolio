@@ -3,14 +3,14 @@
         "id": 1,
         "name": "Peluquería De La Cruz (v. pre lanzamiento)",
         "description": "E-commerce para peluqueria. Realizado con React js, Javascript, Postman, Axios, FireBase, HTML, CSS y Bootstrap.",
-        "icon": "images/Delacruz.png",
+        "icon": "images/Delacruz.webp",
         "link": "https://delacruzpeluqueria.netlify.app/"
     },
     {
         "id": 2,
         "name": "Ruca E-Commerce",
         "description": "E-commerce, Proyecto integrador de Coder House. Realizado con React js, FireBase, HTML, CSS y Bootstrap.",
-        "icon": "images/E-commerce.png",
+        "icon": "images/E-commerce.webp",
         "link": "https://ruca-e-commerce.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/React-Ruca-CoderHouse.git"
     },
@@ -18,7 +18,7 @@
         "id": 3,
         "name": "Portfolio personal",
         "description": "Portafolio personal. Realizado con React js, Typescript, HTML, CSS y Bootstrap.",
-        "icon": "images/portafolio.png",
+        "icon": "images/portafolio.webp",
         "link": "#",
         "codigo": "https://github.com/kevinfigueredo2000/Mi-Portfolio"
     },
@@ -26,14 +26,14 @@
         "id": 4,
         "name": "Template Landing-page",
         "description": "Maqueta de Landing page. Realizado con HTML y CSS.",
-        "icon": "images/landing-page.png",
+        "icon": "images/landing-page.webp",
         "link": "https://template-landing-page-kevin.netlify.app/"
     },
     {
         "id": 5,
         "name": "Registro de notas",
         "description": "Proyecto de un registro de notas para profesores. Realizado con Js, HTML, CSS y Bootstrap.",
-        "icon": "images/RegistroDeNotas.png",
+        "icon": "images/RegistroDeNotas.webp",
         "link": "https://registrodenotas-kf.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/Registro-de-notas.git"
     },
@@ -41,7 +41,7 @@
         "id": 6,
         "name": "ABM Clientes",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
-        "icon": "images/abmclientes.png",
+        "icon": "images/abmclientes.webp",
         "link": "https://abm-ventas-kf.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/ABM-Clientes"
     }

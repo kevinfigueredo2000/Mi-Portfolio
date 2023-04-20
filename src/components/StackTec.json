@@ -2,76 +2,76 @@
     {
         "id": 1,
         "caption": "React Js",
-        "icon": "images/react.png"
+        "icon": "images/react.webp"
     },
     {
         "id": 2,
         "caption": "Javascript",
-        "icon": "images/js.png"
+        "icon": "images/js.webp"
     },
     {
         "id": 3,
         "caption": "TYPESCRIPT",
-        "icon": "https://essenceofchaos.github.io/images/typescript.png"
+        "icon": "images/typescript.webp"
     },
     {
         "id": 4,
         "caption": "Postman",
-        "icon": "images/Postman.png"
+        "icon": "images/Postman.webp"
     },
     {
         "id": 5,
         "caption": "Firebase",
-        "icon": "images/Firebase.png"
+        "icon": "images/Firebase.webp"
     },
     {
         "id": 6,
         "caption": "Git",
-        "icon": "images/git.png"
+        "icon": "images/git.webp"
     },
     {
         "id": 7,
         "caption": "HTML-5",
-        "icon": "images/html5.png"
+        "icon": "images/html5.webp"
     },
     {
         "id": 8,
         "caption": "Bootstrap",
-        "icon": "images/boot.png"
+        "icon": "images/boot.webp"
     },
     {
         "id": 9,
         "caption": "CSS",
-        "icon": "images/css.png"
+        "icon": "images/css.webp"
     },
     {
         "id": 10,
         "caption": "AXIOS",
-        "icon": "https://www.tableau.com/sites/default/files/2020-10/axios-icon_0.png"
+        "icon": "images/axios.webp"
     },
     {
         "id": 11,
         "caption": "Jquery",
-        "icon" : "images/jquery.png"
+        "icon" : "images/jquery.webp"
     },
     {
         "id": 12,
         "caption": "Word",
-        "icon": "images/word.png"
+        "icon": "images/word.webp"
     },
     {
         "id": 13,
         "caption": "Excel",
-        "icon": "images/excel.png"
+        "icon": "images/excel.webp"
     },
     {
         "id": 14,
         "caption": "Photoshop",
-        "icon": "images/photo1.png"
+        "icon": "images/photo1.webp"
     },
     {
         "id": 15,
         "caption": "Sass",
-        "icon": "https://miro.medium.com/max/1024/1*9U1toerFxB8aiFRreLxEUQ.png"
+        "icon": "images/sass.webp"
     }
 ]

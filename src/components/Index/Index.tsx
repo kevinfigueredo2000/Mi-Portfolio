@@ -27,7 +27,7 @@ export const Index = () => (
                 </Row>
             </div>
             <div className="col-12 mt-5 mt-sm-0 mb-4 col-sm-5 text-center">
-                <img className="img-fluid avatar shadow" src="images/fotoKev.jpg" alt="Kevin Figueredo" />
+                <img className="img-fluid avatar shadow" src="images/fotoKev.webp" alt="Kevin Figueredo" />
             </div>
         </Row>
         <hr />
