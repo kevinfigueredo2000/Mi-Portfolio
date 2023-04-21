@@ -49,7 +49,7 @@ export const NavBar = () => {
                         </li>
                     </ul>
                     <div id="cvv">
-                        <a href="kfcv.pdf" id="cv" download="kfcv.pdf"> Descargar CV <FaDownload /></a>
+                        <a href="Kevin_Figueredo-CV.pdf" id="cv" download="Kevin_Figueredo-CV.pdf"> Descargar CV <FaDownload /></a>
                     </div>
                 </Navbar>
             </Container>

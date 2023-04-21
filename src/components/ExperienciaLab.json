@@ -6,13 +6,4 @@
     "trabajos":["Armado y maquetación de página web", "Programación Front-end", "API Rest"],
     "icon":"https://delacruzpeluqueria.netlify.app/Imgs/LOGO_DE_LA_CRUZ_BASE_NEGRO%20(3)_page-0001.jpg",
     "link":"https://delacruzpeluqueria.netlify.app/"
-},
-{
-    "id": 2,
-    "nombre":"Analista Funcional",
-    "empresa":"Prüne",
-    "fecha":"JUL 2021 - JAN 2022",
-    "trabajos":["Analisis de requisitos funcionales", "Creación de flujos en Microsoft Visio", "Casos de prueba"],
-    "icon":"https://icommktrepo.s3.amazonaws.com/minisites/Prune/LogoPrune.jpg",
-    "link":"https://www.prune.com.ar/"
 }]
