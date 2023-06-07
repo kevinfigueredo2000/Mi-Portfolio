@@ -24,6 +24,20 @@
     },
     {
         "id": 4,
+        "name": "Translator",
+        "description": "Traductor de palabras a cualquier idioma. Consumo de API realizado con Next js, Typescript, Axios, CSS y Bootstrap.",
+        "icon": "",
+        "link": ""
+    },
+    {
+        "id": 5,
+        "name": "Template Landing-page-1",
+        "description": "Maqueta de Landing page. Realizado con Next js, Typescript, Axios, CSS y Bootstrap.",
+        "icon": "",
+        "link": ""
+    },
+    {
+        "id": 6,
         "name": "Portfolio personal",
         "description": "Portafolio personal. Realizado con React js, Typescript, HTML, CSS y Bootstrap.",
         "icon": "images/portafolio.webp",
@@ -31,14 +45,14 @@
         "codigo": "https://github.com/kevinfigueredo2000/Mi-Portfolio"
     },
     {
-        "id": 5,
-        "name": "Template Landing-page",
+        "id": 7,
+        "name": "Template Landing-page-2",
         "description": "Maqueta de Landing page. Realizado con HTML y CSS.",
         "icon": "images/landing-page.webp",
         "link": "https://template-landing-page-kevin.netlify.app/"
     },
     {
-        "id": 6,
+        "id": 8,
         "name": "Registro de notas",
         "description": "Proyecto de un registro de notas para profesores. Realizado con Js, HTML, CSS y Bootstrap.",
         "icon": "images/RegistroDeNotas.webp",
@@ -46,7 +60,7 @@
         "codigo": "https://github.com/kevinfigueredo2000/Registro-de-notas.git"
     },
     {
-        "id": 7,
+        "id": 9,
         "name": "ABM Clientes",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
         "icon": "images/abmclientes.webp",
