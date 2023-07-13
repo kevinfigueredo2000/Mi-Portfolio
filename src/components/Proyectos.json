@@ -27,7 +27,7 @@
         "name": "Translator",
         "description": "Traductor de palabras a cualquier idioma. Consumo de API realizado con Next js, Typescript, Axios, CSS y Bootstrap.",
         "icon": "kevin-translate",
-        "link": "https://kevin-translator.vercel.app/"
+        "link": "https://kevin-translator-lou644iqx-kevinfigueredo2000.vercel.app/"
     },
     {
         "id": 5,
