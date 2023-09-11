@@ -67,4 +67,22 @@
         "link": "https://abm-ventas-kf.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/ABM-Clientes"
     }
+    ,
+    {
+        "id": 10,
+        "name": "Hotel single page",
+        "description": "Página responsive realizada unicamente con HTML y CSS",
+        "icon": "images/HotelSinglePage.png",
+        "link": "https://main--hotelsinglepage.netlify.app/",
+        "codigo": "https://github.com/kevinfigueredo2000/HoteSinglepage"
+    }
+    ,
+    {
+        "id": 11,
+        "name": "Advertising Page",
+        "description": "Página responsive realizada unicamente con HTML y CSS",
+        "icon": "images/AdvertisingPage.png",
+        "link": "https://main--advertisingpage.netlify.app/",
+        "codigo": "https://github.com/kevinfigueredo2000/advertisingpage"
+    }
 ]
