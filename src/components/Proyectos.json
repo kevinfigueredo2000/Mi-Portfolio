@@ -56,7 +56,7 @@
         "name": "Hotel single page",
         "description": "Página responsive realizada unicamente con HTML y CSS",
         "icon": "images/HotelSinglePage.webp",
-        "link": "https://main--hotelsinglepage.netlify.app/",
+        "link": "https://hotel-singlepage.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/HoteSinglepage"
     },
     {
@@ -64,7 +64,7 @@
         "name": "Advertising Page",
         "description": "Página responsive realizada unicamente con HTML y CSS",
         "icon": "images/AdvertisingPage.webp",
-        "link": "https://main--advertisingpage.netlify.app/",
+        "link": "https://advertising-page.netlify.app/",
         "codigo": "https://github.com/kevinfigueredo2000/advertisingpage"
     },
     {
